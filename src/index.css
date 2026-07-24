@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Language-based color palettes (RGB channels for Tailwind opacity support) ── */
+:root,
+html[lang="en"] {
+  --brand-blue:   59 130 246;
+  --brand-purple: 139 92 246;
+  --brand-teal:   20 184 166;
+
+  --bg-light-from: #eff6ff;
+  --bg-light-via:  #f5f3ff;
+  --bg-light-to:   #ecfdf5;
+  --bg-dark-from:  #020818;
+  --bg-dark-via:   #05050f;
+  --bg-dark-to:    #030712;
+
+  --blob-1: rgba(59,130,246,0.30);
+  --blob-2: rgba(139,92,246,0.30);
+  --blob-3: rgba(20,184,166,0.25);
+  --blob-1-dark: rgba(59,130,246,0.18);
+  --blob-2-dark: rgba(139,92,246,0.18);
+  --blob-3-dark: rgba(20,184,166,0.12);
+}
+
+html[lang="de"] {
+  --brand-blue:   220 38 38;
+  --brand-purple: 180 83 9;
+  --brand-teal:   217 119 6;
+
+  --bg-light-from: #fff1f0;
+  --bg-light-via:  #fffbeb;
+  --bg-light-to:   #fef3c7;
+  --bg-dark-from:  #130505;
+  --bg-dark-via:   #0f0a02;
+  --bg-dark-to:    #0d0800;
+
+  --blob-1: rgba(220,38,38,0.28);
+  --blob-2: rgba(180,83,9,0.28);
+  --blob-3: rgba(217,119,6,0.22);
+  --blob-1-dark: rgba(220,38,38,0.16);
+  --blob-2-dark: rgba(180,83,9,0.16);
+  --blob-3-dark: rgba(217,119,6,0.12);
+}
+
+html[lang="fr"] {
+  --brand-blue:   29 78 216;
+  --brand-purple: 67 56 202;
+  --brand-teal:   220 38 38;
+
+  --bg-light-from: #eff6ff;
+  --bg-light-via:  #eef2ff;
+  --bg-light-to:   #fff1f0;
+  --bg-dark-from:  #020818;
+  --bg-dark-via:   #030614;
+  --bg-dark-to:    #130505;
+
+  --blob-1: rgba(29,78,216,0.30);
+  --blob-2: rgba(67,56,202,0.28);
+  --blob-3: rgba(220,38,38,0.22);
+  --blob-1-dark: rgba(29,78,216,0.18);
+  --blob-2-dark: rgba(67,56,202,0.16);
+  --blob-3-dark: rgba(220,38,38,0.12);
+}
+
+html[lang="es"] {
+  --brand-blue:   185 28 28;
+  --brand-purple: 217 119 6;
+  --brand-teal:   234 88 12;
+
+  --bg-light-from: #fff1f0;
+  --bg-light-via:  #fffbeb;
+  --bg-light-to:   #fff7ed;
+  --bg-dark-from:  #110404;
+  --bg-dark-via:   #0d0800;
+  --bg-dark-to:    #100700;
+
+  --blob-1: rgba(185,28,28,0.28);
+  --blob-2: rgba(217,119,6,0.28);
+  --blob-3: rgba(234,88,12,0.22);
+  --blob-1-dark: rgba(185,28,28,0.16);
+  --blob-2-dark: rgba(217,119,6,0.16);
+  --blob-3-dark: rgba(234,88,12,0.12);
+}
+
+html[lang="ja"] {
+  --brand-blue:   220 38 38;
+  --brand-purple: 236 72 153;
+  --brand-teal:   67 56 202;
+
+  --bg-light-from: #fff1f0;
+  --bg-light-via:  #fdf2f8;
+  --bg-light-to:   #eef2ff;
+  --bg-dark-from:  #130308;
+  --bg-dark-via:   #110210;
+  --bg-dark-to:    #030614;
+
+  --blob-1: rgba(220,38,38,0.25);
+  --blob-2: rgba(236,72,153,0.28);
+  --blob-3: rgba(67,56,202,0.22);
+  --blob-1-dark: rgba(220,38,38,0.14);
+  --blob-2-dark: rgba(236,72,153,0.18);
+  --blob-3-dark: rgba(67,56,202,0.12);
+}
+
+html[lang="ko"] {
+  --brand-blue:   29 78 216;
+  --brand-purple: 220 38 38;
+  --brand-teal:   124 58 237;
+
+  --bg-light-from: #eff6ff;
+  --bg-light-via:  #fff1f0;
+  --bg-light-to:   #f5f3ff;
+  --bg-dark-from:  #020818;
+  --bg-dark-via:   #130505;
+  --bg-dark-to:    #0a0512;
+
+  --blob-1: rgba(29,78,216,0.28);
+  --blob-2: rgba(220,38,38,0.26);
+  --blob-3: rgba(124,58,237,0.22);
+  --blob-1-dark: rgba(29,78,216,0.16);
+  --blob-2-dark: rgba(220,38,38,0.15);
+  --blob-3-dark: rgba(124,58,237,0.12);
+}
+
+html[lang="zh"] {
+  --brand-blue:   220 38 38;
+  --brand-purple: 202 138 4;
+  --brand-teal:   180 83 9;
+
+  --bg-light-from: #fff1f0;
+  --bg-light-via:  #fefce8;
+  --bg-light-to:   #fffbeb;
+  --bg-dark-from:  #130505;
+  --bg-dark-via:   #0f0d02;
+  --bg-dark-to:    #0d0800;
+
+  --blob-1: rgba(220,38,38,0.28);
+  --blob-2: rgba(202,138,4,0.28);
+  --blob-3: rgba(180,83,9,0.22);
+  --blob-1-dark: rgba(220,38,38,0.16);
+  --blob-2-dark: rgba(202,138,4,0.16);
+  --blob-3-dark: rgba(180,83,9,0.12);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply antialiased transition-colors duration-500;
+    background: linear-gradient(to bottom, var(--bg-light-from), var(--bg-light-via), var(--bg-light-to));
+    color: #334155;
+  }
+
+  .dark body {
+    background: linear-gradient(to bottom, var(--bg-dark-from), var(--bg-dark-via), var(--bg-dark-to));
+    color: #cbd5e1;
+  }
+  ::selection {
+    @apply bg-brand-purple/30 text-slate-900;
+  }
+  .dark ::selection {
+    @apply bg-brand-purple/40 text-white;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply border border-white/40 bg-white/60 backdrop-blur-xl shadow-lg;
+  }
+  .dark .glass {
+    @apply border-white/10 bg-white/5 shadow-black/40;
+  }
+
+  .glass-strong {
+    @apply border border-white/50 bg-white/80 backdrop-blur-2xl shadow-xl;
+  }
+  .dark .glass-strong {
+    @apply border-white/10 bg-white/[0.07] shadow-black/50;
+  }
+
+  .light-bg  { background: linear-gradient(to bottom, var(--bg-light-from), var(--bg-light-via), var(--bg-light-to)); }
+  .dark .light-bg { background: linear-gradient(to bottom, var(--bg-dark-from), var(--bg-dark-via), var(--bg-dark-to)); }
+
+  .blob-1      { background: var(--blob-1); }
+  .dark .blob-1 { background: var(--blob-1-dark); }
+  .blob-2      { background: var(--blob-2); }
+  .dark .blob-2 { background: var(--blob-2-dark); }
+  .blob-3      { background: var(--blob-3); }
+  .dark .blob-3 { background: var(--blob-3-dark); }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-blue via-brand-purple to-brand-teal bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient-x;
+  }
+
+  .section-container {
+    @apply mx-auto w-full max-w-6xl px-6 py-20 md:py-28;
+  }
+
+  /* Glow ring that appears on hover of cards */
+  .card-glow::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgb(var(--brand-blue)), rgb(var(--brand-purple)), rgb(var(--brand-teal)));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  .card-glow:hover::before {
+    opacity: 1;
+  }
+
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-brand-blue via-brand-purple to-brand-teal bg-[length:200%_auto] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-purple/25 transition-[background-position,transform,box-shadow] duration-500 hover:-translate-y-0.5 hover:bg-right hover:shadow-brand-purple/50;
+  }
+  .btn-primary::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-150%) skewX(-20deg);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.35),
+      transparent
+    );
+    transition: transform 0.7s ease;
+  }
+  .btn-primary:hover::after {
+    transform: translateX(150%) skewX(-20deg);
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border px-6 py-3 text-sm font-semibold transition-colors;
+    border-color: rgb(var(--brand-purple) / 0.4);
+    color: rgb(var(--brand-purple));
+  }
+  .btn-ghost:hover {
+    border-color: rgb(var(--brand-purple));
+    background: rgb(var(--brand-purple) / 0.08);
+  }
+  .dark .btn-ghost {
+    border-color: rgb(var(--brand-purple) / 0.35);
+    color: rgb(var(--brand-purple));
+  }
+  .dark .btn-ghost:hover {
+    border-color: rgb(var(--brand-purple));
+    background: rgb(var(--brand-purple) / 0.15);
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(var(--brand-blue)), rgb(var(--brand-purple)), rgb(var(--brand-teal)));
+  border-radius: 9999px;
+}
