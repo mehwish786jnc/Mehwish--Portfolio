@@ -362,83 +362,71 @@ export const translations = {
       items: [
         {
           role: "AI Core DevOps Engineer",
-          period: "Aktuell",
-          points: [
-            "KI-gestützte Unternehmensanwendungen",
-            "CI/CD-Automatisierung",
-            "Cloud-native Entwicklung",
-            "DevOps-Engineering",
-          ],
+          period: "Jun 2026 – heute",
+          points: ["KI-gestützte Unternehmensanwendungen", "CI/CD-Automatisierung", "Cloud-native Entwicklung auf SAP BTP", "DevOps-Engineering"],
         },
         {
-          role: "Software Development Engineer",
-          period: "Zuvor",
-          points: ["Entwicklung von Unternehmensanwendungen"],
+          role: "Software Engineer — MD's Office",
+          period: "Aug 2025 – Jun 2026",
+          points: ["KI-Features für Learning Fest 2.0 mit RAG", "SAP Joule KI-Integration", "Full-Stack Unified Booking App mit RBAC", "Deployment auf SAP BTP"],
         },
         {
-          role: "Praktikantin Computer Vision",
-          period: "Praktikum",
-          points: ["Maritime KI-Lösungen", "Auszeichnung als beste Praktikantin"],
+          role: "Software Engineer Intern",
+          period: "Jun 2024 – Jun 2025",
+          points: ["Unternehmenssoftwareentwicklung bei SERT Globe"],
         },
         {
-          role: "Praktikantin Softwareentwicklung",
-          period: "Praktikum",
-          points: ["Softwareentwicklung im Luftfahrtbereich"],
+          role: "SDE Intern",
+          period: "Mai 2024",
+          points: ["Softwareentwicklung für Luft- und Raumfahrtsysteme bei HAL"],
+        },
+        {
+          role: "Deep Learning Intern",
+          period: "Apr 2024 – Mai 2024",
+          points: ["Deep-Learning-Forschung bei Estah Society"],
+        },
+        {
+          role: "Computer Vision Intern",
+          period: "Aug 2023 – Sep 2023",
+          points: ["Maritime KI & Kriegsschifferkennung bei BEL", "Auszeichnung als beste Praktikantin"],
+        },
+        {
+          role: "AI Project Intern",
+          period: "Mai 2023 – Jun 2023",
+          points: ["KI- & ML-Projektentwicklung bei Bharat Electronics Limited"],
+        },
+        {
+          role: "Web Developer",
+          period: "Dez 2022 – Mär 2023",
+          points: ["Webentwicklung bei Kohli Media LLP"],
         },
       ],
     },
     projects: {
       eyebrow: "Projekte",
       title: "Ausgewählte Arbeiten",
-      subtitle:
-        "Eine Auswahl von Projekten aus KI, Computer Vision und Full-Stack-Entwicklung.",
+      subtitle: "Eine Auswahl von Projekten aus KI, Full-Stack-Entwicklung und DevOps.",
       code: "Code",
       liveDemo: "Live-Demo",
       comingSoon: "Demnächst",
+      inProgress: "In Bearbeitung",
       items: [
-        {
-          title: "Multi-Service-Buchungsplattform",
-          description:
-            "Full-Stack-Buchungssystem mit rollenbasierter Zugriffskontrolle und über 40 REST-APIs, containerisiert mit Docker.",
-          highlight: "40+ REST-APIs",
-        },
-        {
-          title: "System zur Kriegsschiff-Erkennung",
-          description:
-            "Deep-Learning-Computer-Vision-Modell zur Erkennung maritimer Kriegsschiffe, erstellt mit PyTorch.",
-          highlight: "93 % Genauigkeit",
-        },
-        {
-          title: "Learning Fest 2.0",
-          description: "Demnächst — interne Enablement- und Lerninitiative.",
-          highlight: "Platzhalter",
-        },
-        {
-          title: "Joule-Integration",
-          description: "Demnächst — Integration des SAP-Joule-KI-Assistenten.",
-          highlight: "Platzhalter",
-        },
-        {
-          title: "SAP BTP Cloud-Deployments",
-          description: "Demnächst — Cloud-native Deployments auf SAP BTP.",
-          highlight: "Platzhalter",
-        },
+        { title: "SkillSync – KI-Plattform für Zusammenarbeit & Recruiting", description: "Full-Stack-Plattform mit KI-basiertem Job-Matching via NLP, Echtzeit-Chat und containerisierter CI/CD-Pipeline.", highlight: "In Bearbeitung" },
+        { title: "Multi-Service-Buchungsplattform", description: "Full-Stack-Buchungssystem mit 40+ REST-APIs, Authentifizierung, RBAC und Docker-Deployment.", highlight: "40+ REST-APIs" },
+        { title: "Kriegsschiff-Erkennungssystem (Indische Marine – BEL)", description: "93 % genaues Computer-Vision-Modell mit PyTorch für sichere maritime Umgebungen.", highlight: "93 % Genauigkeit" },
+        { title: "Gebärdensprach-Übersetzer (Englisch → ISL)", description: "NLP-basiertes System zur Übersetzung von Englisch in Indische Gebärdensprache mit visuellen Ausgaben.", highlight: "Barrierefreiheit" },
+        { title: "CI/CD-Pipeline mit Jenkins", description: "Freestyle- und Pipeline-Jobs mit GitHub-Integration, Jenkinsfile und automatisierten SCM-Polling-Triggern.", highlight: "DevOps" },
+        { title: "Git-Versionskontrolle & Workflow-Automatisierung", description: "Vollständiges Git-Lifecycle-Management: Feature-Branching, Merge-Konfliktlösung, Rebase und GitHub-Integration.", highlight: "DevOps" },
       ],
     },
     education: {
       eyebrow: "Ausbildung",
       title: "Akademischer Hintergrund",
       items: [
-        {
-          degree: "M.Tech Software Engineering",
-          period: "2025 – heute",
-          detail: "",
-        },
-        {
-          degree: "B.Tech Informatik (KI & ML)",
-          period: "2021 – 2025",
-          detail: "Notendurchschnitt: 8,2",
-        },
+        { degree: "M.Tech Software Engineering", period: "2025 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
+        { degree: "B.Tech Informatik (KI & ML)", period: "2021 – 2025", detail: "Christ University, Bangalore · Notendurchschnitt: 8,2" },
+        { degree: "Voruni (PCMCs)", period: "2018 – 2020", detail: "Jyoti Nivas College Autonomous, Bangalore" },
+        { degree: "Schule", period: "", detail: "Good Samaritan English School, Bangalore" },
       ],
     },
     publications: {
@@ -596,85 +584,41 @@ export const translations = {
       eyebrow: "Expérience",
       title: "Mon parcours professionnel",
       items: [
-        {
-          role: "Ingénieure AI Core DevOps",
-          period: "Actuel",
-          points: [
-            "Applications d'entreprise pilotées par l'IA",
-            "Automatisation CI/CD",
-            "Développement cloud-native",
-            "Ingénierie DevOps",
-          ],
-        },
-        {
-          role: "Ingénieure en développement logiciel",
-          period: "Précédent",
-          points: ["Développement d'applications d'entreprise"],
-        },
-        {
-          role: "Stagiaire en vision par ordinateur",
-          period: "Stage",
-          points: ["Solutions d'IA maritime", "Prix du meilleur stagiaire"],
-        },
-        {
-          role: "Stagiaire en développement logiciel",
-          period: "Stage",
-          points: ["Développement de logiciels aérospatiaux"],
-        },
+        { role: "Ingénieure AI Core DevOps", period: "Jun 2026 – présent", points: ["Applications d'entreprise pilotées par l'IA", "Automatisation CI/CD", "Développement cloud-native sur SAP BTP", "Ingénierie DevOps"] },
+        { role: "Ingénieure Logiciel — Bureau du DG", period: "Août 2025 – Jun 2026", points: ["Fonctionnalités IA pour Learning Fest 2.0 avec RAG", "Intégration SAP Joule", "Application de réservation full-stack avec RBAC", "Déploiement sur SAP BTP"] },
+        { role: "Stagiaire Ingénieure Logiciel", period: "Jun 2024 – Jun 2025", points: ["Développement logiciel d'entreprise chez SERT Globe"] },
+        { role: "Stagiaire SDE", period: "Mai 2024", points: ["Développement logiciel pour systèmes aérospatiaux chez HAL"] },
+        { role: "Stagiaire Deep Learning", period: "Avr 2024 – Mai 2024", points: ["Recherche en deep learning chez Estah Society"] },
+        { role: "Stagiaire en vision par ordinateur", period: "Août 2023 – Sep 2023", points: ["IA maritime & reconnaissance de navires chez BEL", "Prix du meilleur stagiaire"] },
+        { role: "Stagiaire Projet IA", period: "Mai 2023 – Jun 2023", points: ["Développement de projets IA & ML chez Bharat Electronics Limited"] },
+        { role: "Développeuse Web", period: "Déc 2022 – Mar 2023", points: ["Développement web chez Kohli Media LLP"] },
       ],
     },
     projects: {
       eyebrow: "Projets",
       title: "Travaux en vedette",
-      subtitle:
-        "Une sélection de projets en IA, vision par ordinateur et ingénierie full-stack.",
+      subtitle: "Une sélection de projets en IA, ingénierie full-stack et DevOps.",
       code: "Code",
       liveDemo: "Démo en direct",
       comingSoon: "Bientôt disponible",
+      inProgress: "En cours",
       items: [
-        {
-          title: "Plateforme de réservation multi-services",
-          description:
-            "Système de réservation full-stack avec contrôle d'accès basé sur les rôles et plus de 40 API REST, conteneurisé avec Docker.",
-          highlight: "40+ API REST",
-        },
-        {
-          title: "Système de reconnaissance de navires de guerre",
-          description:
-            "Modèle de vision par ordinateur à apprentissage profond pour la reconnaissance de navires de guerre, construit avec PyTorch.",
-          highlight: "93 % de précision",
-        },
-        {
-          title: "Learning Fest 2.0",
-          description: "Bientôt disponible — initiative interne de formation et de montée en compétences.",
-          highlight: "Espace réservé",
-        },
-        {
-          title: "Intégration de Joule",
-          description: "Bientôt disponible — projet d'intégration de l'assistant IA SAP Joule.",
-          highlight: "Espace réservé",
-        },
-        {
-          title: "Déploiements cloud SAP BTP",
-          description: "Bientôt disponible — déploiements cloud-native sur SAP BTP.",
-          highlight: "Espace réservé",
-        },
+        { title: "SkillSync – Plateforme IA de collaboration & recrutement", description: "Plateforme full-stack avec matching IA via NLP, chat en temps réel et pipeline CI/CD conteneurisé.", highlight: "En cours" },
+        { title: "Plateforme de réservation multi-services", description: "Système full-stack avec 40+ API REST, authentification, RBAC et déploiement Docker.", highlight: "40+ API REST" },
+        { title: "Système de reconnaissance de navires (Marine indienne – BEL)", description: "Modèle de vision par ordinateur à 93 % de précision avec PyTorch pour environnements maritimes sécurisés.", highlight: "93 % de précision" },
+        { title: "Traducteur en langue des signes (Anglais → ISL)", description: "Système NLP traduisant l'anglais en langue des signes indienne avec sorties visuelles interactives.", highlight: "Accessibilité" },
+        { title: "Pipeline CI/CD avec Jenkins", description: "Jobs Freestyle et Pipeline avec intégration GitHub, Jenkinsfile et déclencheurs SCM automatisés.", highlight: "DevOps" },
+        { title: "Contrôle de version Git & automatisation des workflows", description: "Gestion complète du cycle de vie Git : branching, résolution de conflits, rebase et intégration GitHub.", highlight: "DevOps" },
       ],
     },
     education: {
       eyebrow: "Formation",
       title: "Parcours académique",
       items: [
-        {
-          degree: "M.Tech en Génie logiciel",
-          period: "2025 – présent",
-          detail: "",
-        },
-        {
-          degree: "B.Tech en Génie informatique (IA et ML)",
-          period: "2021 – 2025",
-          detail: "Moyenne : 8,2",
-        },
+        { degree: "M.Tech en Génie logiciel", period: "2025 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
+        { degree: "B.Tech en Génie informatique (IA et ML)", period: "2021 – 2025", detail: "Christ University, Bangalore · Moyenne : 8,2" },
+        { degree: "Préuniversitaire (PCMCs)", period: "2018 – 2020", detail: "Jyoti Nivas College Autonomous, Bangalore" },
+        { degree: "Scolarité", period: "", detail: "Good Samaritan English School, Bangalore" },
       ],
     },
     publications: {
@@ -831,85 +775,41 @@ export const translations = {
       eyebrow: "Experiencia",
       title: "Mi trayectoria profesional",
       items: [
-        {
-          role: "Ingeniera AI Core DevOps",
-          period: "Actual",
-          points: [
-            "Aplicaciones empresariales con IA",
-            "Automatización CI/CD",
-            "Desarrollo cloud-native",
-            "Ingeniería DevOps",
-          ],
-        },
-        {
-          role: "Ingeniera de desarrollo de software",
-          period: "Anterior",
-          points: ["Desarrollo de aplicaciones empresariales"],
-        },
-        {
-          role: "Practicante de visión por computadora",
-          period: "Prácticas",
-          points: ["Soluciones de IA marítima", "Premio a la mejor practicante"],
-        },
-        {
-          role: "Practicante de desarrollo de software",
-          period: "Prácticas",
-          points: ["Desarrollo de software aeroespacial"],
-        },
+        { role: "Ingeniera AI Core DevOps", period: "Jun 2026 – presente", points: ["Aplicaciones empresariales con IA", "Automatización CI/CD", "Desarrollo cloud-native en SAP BTP", "Ingeniería DevOps"] },
+        { role: "Ingeniera de Software — Oficina del DG", period: "Ago 2025 – Jun 2026", points: ["Funciones IA para Learning Fest 2.0 con RAG", "Integración SAP Joule", "App de reservas full-stack con RBAC", "Despliegue en SAP BTP"] },
+        { role: "Pasante Ingeniera de Software", period: "Jun 2024 – Jun 2025", points: ["Desarrollo de software empresarial en SERT Globe"] },
+        { role: "Pasante SDE", period: "May 2024", points: ["Desarrollo de software para sistemas aeroespaciales en HAL"] },
+        { role: "Pasante Deep Learning", period: "Abr 2024 – May 2024", points: ["Investigación en deep learning en Estah Society"] },
+        { role: "Practicante de visión por computadora", period: "Ago 2023 – Sep 2023", points: ["IA marítima & reconocimiento de buques en BEL", "Premio a la mejor practicante"] },
+        { role: "Pasante Proyecto IA", period: "May 2023 – Jun 2023", points: ["Desarrollo de proyectos IA & ML en Bharat Electronics Limited"] },
+        { role: "Desarrolladora Web", period: "Dic 2022 – Mar 2023", points: ["Desarrollo web en Kohli Media LLP"] },
       ],
     },
     projects: {
       eyebrow: "Proyectos",
       title: "Trabajos destacados",
-      subtitle:
-        "Una selección de proyectos de IA, visión por computadora e ingeniería full-stack.",
+      subtitle: "Una selección de proyectos de IA, ingeniería full-stack y DevOps.",
       code: "Código",
       liveDemo: "Demo en vivo",
       comingSoon: "Próximamente",
+      inProgress: "En progreso",
       items: [
-        {
-          title: "Plataforma de reservas multiservicio",
-          description:
-            "Sistema de reservas full-stack con control de acceso basado en roles y más de 40 API REST, containerizado con Docker.",
-          highlight: "40+ API REST",
-        },
-        {
-          title: "Sistema de reconocimiento de buques de guerra",
-          description:
-            "Modelo de visión por computadora con aprendizaje profundo para el reconocimiento de buques de guerra, creado con PyTorch.",
-          highlight: "93 % de precisión",
-        },
-        {
-          title: "Learning Fest 2.0",
-          description: "Próximamente — iniciativa interna de formación y capacitación.",
-          highlight: "Marcador de posición",
-        },
-        {
-          title: "Integración de Joule",
-          description: "Próximamente — proyecto de integración del asistente de IA SAP Joule.",
-          highlight: "Marcador de posición",
-        },
-        {
-          title: "Despliegues en la nube SAP BTP",
-          description: "Próximamente — despliegues cloud-native en SAP BTP.",
-          highlight: "Marcador de posición",
-        },
+        { title: "SkillSync – Plataforma IA de colaboración y contratación", description: "Plataforma full-stack con matching IA por NLP, chat en tiempo real y pipeline CI/CD contenarizado.", highlight: "En progreso" },
+        { title: "Plataforma de reservas multiservicio", description: "Sistema full-stack con 40+ API REST, autenticación, RBAC y despliegue con Docker.", highlight: "40+ API REST" },
+        { title: "Sistema de reconocimiento de buques (Marina india – BEL)", description: "Modelo de visión por computadora con 93 % de precisión con PyTorch para entornos marítimos seguros.", highlight: "93 % precisión" },
+        { title: "Traductor de lengua de señas (Inglés → ISL)", description: "Sistema NLP que traduce inglés a lengua de señas india con salidas visuales interactivas.", highlight: "Accesibilidad" },
+        { title: "Pipeline CI/CD con Jenkins", description: "Jobs Freestyle y Pipeline con integración GitHub, Jenkinsfile y disparadores SCM automáticos.", highlight: "DevOps" },
+        { title: "Control de versiones Git & automatización", description: "Gestión completa del ciclo de vida Git: branching, resolución de conflictos, rebase e integración GitHub.", highlight: "DevOps" },
       ],
     },
     education: {
       eyebrow: "Formación",
       title: "Trayectoria académica",
       items: [
-        {
-          degree: "M.Tech en Ingeniería de Software",
-          period: "2025 – presente",
-          detail: "",
-        },
-        {
-          degree: "B.Tech en Ingeniería Informática (IA y ML)",
-          period: "2021 – 2025",
-          detail: "Promedio: 8,2",
-        },
+        { degree: "M.Tech en Ingeniería de Software", period: "2025 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
+        { degree: "B.Tech en Ingeniería Informática (IA y ML)", period: "2021 – 2025", detail: "Christ University, Bangalore · Promedio: 8,2" },
+        { degree: "Preuniversitario (PCMCs)", period: "2018 – 2020", detail: "Jyoti Nivas College Autonomous, Bangalore" },
+        { degree: "Secundaria", period: "", detail: "Good Samaritan English School, Bangalore" },
       ],
     },
     publications: {
@@ -1065,85 +965,41 @@ export const translations = {
       eyebrow: "経歴",
       title: "私のキャリアの歩み",
       items: [
-        {
-          role: "AIコアDevOpsエンジニア",
-          period: "現在",
-          points: [
-            "AI を活用したエンタープライズアプリケーション",
-            "CI/CD 自動化",
-            "クラウドネイティブ開発",
-            "DevOps エンジニアリング",
-          ],
-        },
-        {
-          role: "ソフトウェア開発エンジニア",
-          period: "以前",
-          points: ["エンタープライズアプリケーション開発"],
-        },
-        {
-          role: "コンピュータビジョン インターン",
-          period: "インターンシップ",
-          points: ["海洋 AI ソリューション", "最優秀インターン賞"],
-        },
-        {
-          role: "ソフトウェア開発 インターン",
-          period: "インターンシップ",
-          points: ["航空宇宙ソフトウェア開発"],
-        },
+        { role: "AIコアDevOpsエンジニア", period: "2026年6月 – 現在", points: ["AI 活用エンタープライズアプリ開発", "CI/CD パイプライン自動化", "SAP BTP でのクラウドネイティブ開発", "DevOps エンジニアリング"] },
+        { role: "ソフトウェアエンジニア — MD 室", period: "2025年8月 – 2026年6月", points: ["Learning Fest 2.0 の AI 機能 (RAG)", "SAP Joule AI 統合", "RBAC 付き統合予約アプリ開発", "SAP BTP へのデプロイ"] },
+        { role: "ソフトウェアエンジニア インターン", period: "2024年6月 – 2025年6月", points: ["SERT Globe でのエンタープライズ ソフトウェア開発"] },
+        { role: "SDE インターン", period: "2024年5月", points: ["HAL での航空宇宙システム向けソフトウェア開発"] },
+        { role: "ディープラーニング インターン", period: "2024年4月 – 2024年5月", points: ["Estah Society でのディープラーニング研究"] },
+        { role: "コンピュータビジョン インターン", period: "2023年8月 – 2023年9月", points: ["BEL での海洋 AI・軍艦認識システム", "最優秀インターン賞"] },
+        { role: "AI プロジェクト インターン", period: "2023年5月 – 2023年6月", points: ["Bharat Electronics Limited での AI・ML プロジェクト開発"] },
+        { role: "Web 開発者", period: "2022年12月 – 2023年3月", points: ["Kohli Media LLP での Web 開発"] },
       ],
     },
     projects: {
       eyebrow: "プロジェクト",
       title: "注目の実績",
-      subtitle:
-        "AI、コンピュータビジョン、フルスタックエンジニアリングにわたるプロジェクトの一部。",
+      subtitle: "AI、フルスタックエンジニアリング、DevOps にわたるプロジェクトの一部。",
       code: "コード",
       liveDemo: "ライブデモ",
       comingSoon: "近日公開",
+      inProgress: "進行中",
       items: [
-        {
-          title: "マルチサービス予約プラットフォーム",
-          description:
-            "ロールベースのアクセス制御と 40 以上の REST API を備えたフルスタック予約システム。Docker でコンテナ化。",
-          highlight: "40+ REST API",
-        },
-        {
-          title: "軍艦認識システム",
-          description:
-            "PyTorch で構築した、海洋軍艦を認識するディープラーニングのコンピュータビジョンモデル。",
-          highlight: "精度 93%",
-        },
-        {
-          title: "Learning Fest 2.0",
-          description: "近日公開 — 社内のイネーブルメントおよび学習イニシアチブ。",
-          highlight: "プレースホルダー",
-        },
-        {
-          title: "Joule 連携",
-          description: "近日公開 — SAP Joule AI アシスタント連携プロジェクト。",
-          highlight: "プレースホルダー",
-        },
-        {
-          title: "SAP BTP クラウド展開",
-          description: "近日公開 — SAP BTP 上のクラウドネイティブ展開。",
-          highlight: "プレースホルダー",
-        },
+        { title: "SkillSync – AI 採用・コラボレーションプラットフォーム", description: "NLP による AI マッチング、WebSocket リアルタイムチャット、コンテナ化 CI/CD パイプラインを備えたフルスタックプラットフォーム。", highlight: "進行中" },
+        { title: "マルチサービス予約プラットフォーム", description: "40 以上の REST API、認証、RBAC、Docker デプロイを備えたフルスタック予約システム。", highlight: "40+ REST API" },
+        { title: "軍艦認識システム（インド海軍 – BEL）", description: "安全なオフライン海洋環境向けに PyTorch で構築した精度 93% のコンピュータビジョンモデル。", highlight: "精度 93%" },
+        { title: "手話翻訳（英語 → ISL）", description: "英語をインド手話に変換する NLP ベースの翻訳システム。視覚的な出力でアクセシビリティを向上。", highlight: "アクセシビリティ" },
+        { title: "Jenkins を使った CI/CD パイプライン", description: "GitHub 連携、Jenkinsfile によるパイプライン・アズ・コード、SCM 自動ポーリングを備えたジョブ構築。", highlight: "DevOps" },
+        { title: "Git バージョン管理 & ワークフロー自動化", description: "フィーチャーブランチ、マージコンフリクト解消、リベース、GitHub 連携を含む Git ライフサイクル管理。", highlight: "DevOps" },
       ],
     },
     education: {
       eyebrow: "学歴",
       title: "学歴",
       items: [
-        {
-          degree: "M.Tech ソフトウェアエンジニアリング",
-          period: "2025 – 現在",
-          detail: "",
-        },
-        {
-          degree: "B.Tech コンピュータサイエンス工学（AI・ML）",
-          period: "2021 – 2025",
-          detail: "GPA: 8.2",
-        },
+        { degree: "M.Tech ソフトウェアエンジニアリング", period: "2025 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
+        { degree: "B.Tech コンピュータサイエンス工学（AI・ML）", period: "2021 – 2025", detail: "Christ University, Bangalore · GPA: 8.2" },
+        { degree: "高校 (PCMCs)", period: "2018 – 2020", detail: "Jyoti Nivas College Autonomous, Bangalore" },
+        { degree: "中学・小学校", period: "", detail: "Good Samaritan English School, Bangalore" },
       ],
     },
     publications: {
@@ -1300,85 +1156,41 @@ export const translations = {
       eyebrow: "경력",
       title: "나의 커리어 여정",
       items: [
-        {
-          role: "AI 코어 DevOps 엔지니어",
-          period: "현재",
-          points: [
-            "AI 기반 엔터프라이즈 애플리케이션",
-            "CI/CD 자동화",
-            "클라우드 네이티브 개발",
-            "DevOps 엔지니어링",
-          ],
-        },
-        {
-          role: "소프트웨어 개발 엔지니어",
-          period: "이전",
-          points: ["엔터프라이즈 애플리케이션 개발"],
-        },
-        {
-          role: "컴퓨터 비전 인턴",
-          period: "인턴십",
-          points: ["해양 AI 솔루션", "최우수 인턴상"],
-        },
-        {
-          role: "소프트웨어 개발 인턴",
-          period: "인턴십",
-          points: ["항공우주 소프트웨어 개발"],
-        },
+        { role: "AI 코어 DevOps 엔지니어", period: "2026년 6월 – 현재", points: ["AI 기반 엔터프라이즈 앱 개발", "CI/CD 파이프라인 자동화", "SAP BTP 클라우드 네이티브 개발", "DevOps 엔지니어링"] },
+        { role: "소프트웨어 엔지니어 — MD 실", period: "2025년 8월 – 2026년 6월", points: ["Learning Fest 2.0 AI 기능 (RAG)", "SAP Joule AI 통합", "RBAC 통합 예약 앱 개발", "SAP BTP 배포"] },
+        { role: "소프트웨어 엔지니어 인턴", period: "2024년 6월 – 2025년 6월", points: ["SERT Globe 엔터프라이즈 소프트웨어 개발"] },
+        { role: "SDE 인턴", period: "2024년 5월", points: ["HAL 항공우주 시스템 소프트웨어 개발"] },
+        { role: "딥러닝 인턴", period: "2024년 4월 – 2024년 5월", points: ["Estah Society 딥러닝 연구"] },
+        { role: "컴퓨터 비전 인턴", period: "2023년 8월 – 2023년 9월", points: ["BEL 해양 AI 및 군함 인식 시스템", "최우수 인턴상"] },
+        { role: "AI 프로젝트 인턴", period: "2023년 5월 – 2023년 6월", points: ["Bharat Electronics Limited AI·ML 프로젝트 개발"] },
+        { role: "웹 개발자", period: "2022년 12월 – 2023년 3월", points: ["Kohli Media LLP 웹 개발"] },
       ],
     },
     projects: {
       eyebrow: "프로젝트",
       title: "주요 작업",
-      subtitle:
-        "AI, 컴퓨터 비전, 풀스택 엔지니어링을 아우르는 프로젝트 모음.",
+      subtitle: "AI, 풀스택 엔지니어링, DevOps를 아우르는 프로젝트 모음.",
       code: "코드",
       liveDemo: "라이브 데모",
       comingSoon: "출시 예정",
+      inProgress: "진행 중",
       items: [
-        {
-          title: "멀티 서비스 예약 플랫폼",
-          description:
-            "역할 기반 접근 제어와 40개 이상의 REST API를 갖춘 풀스택 예약 시스템, Docker로 컨테이너화.",
-          highlight: "40+ REST API",
-        },
-        {
-          title: "군함 인식 시스템",
-          description:
-            "PyTorch로 구축한 해양 군함 인식용 딥러닝 컴퓨터 비전 모델.",
-          highlight: "정확도 93%",
-        },
-        {
-          title: "Learning Fest 2.0",
-          description: "출시 예정 — 사내 역량 강화 및 학습 이니셔티브.",
-          highlight: "자리 표시자",
-        },
-        {
-          title: "Joule 통합",
-          description: "출시 예정 — SAP Joule AI 어시스턴트 통합 프로젝트.",
-          highlight: "자리 표시자",
-        },
-        {
-          title: "SAP BTP 클라우드 배포",
-          description: "출시 예정 — SAP BTP의 클라우드 네이티브 배포.",
-          highlight: "자리 표시자",
-        },
+        { title: "SkillSync – AI 채용·협업 플랫폼", description: "NLP 기반 AI 매칭, WebSocket 실시간 채팅, 컨테이너화 CI/CD 파이프라인을 갖춘 풀스택 플랫폼.", highlight: "진행 중" },
+        { title: "멀티 서비스 예약 플랫폼", description: "40개 이상의 REST API, 인증, RBAC, Docker 배포를 갖춘 풀스택 예약 시스템.", highlight: "40+ REST API" },
+        { title: "군함 인식 시스템 (인도 해군 – BEL)", description: "보안 해양 환경을 위해 PyTorch로 구축한 정확도 93% 컴퓨터 비전 모델.", highlight: "정확도 93%" },
+        { title: "수어 번역기 (영어 → ISL)", description: "영어를 인도 수어로 변환하는 NLP 기반 시스템. 시각적 출력으로 접근성 향상.", highlight: "접근성" },
+        { title: "Jenkins CI/CD 파이프라인", description: "GitHub 연동, Jenkinsfile 파이프라인 코드, 자동 SCM 폴링 트리거를 갖춘 잡 구성.", highlight: "DevOps" },
+        { title: "Git 버전 관리 & 워크플로우 자동화", description: "피처 브랜칭, 충돌 해결, 리베이스, GitHub 연동을 포함한 전체 Git 라이프사이클 관리.", highlight: "DevOps" },
       ],
     },
     education: {
       eyebrow: "학력",
       title: "학력",
       items: [
-        {
-          degree: "M.Tech 소프트웨어 공학",
-          period: "2025 – 현재",
-          detail: "",
-        },
-        {
-          degree: "B.Tech 컴퓨터 공학 (AI & ML)",
-          period: "2021 – 2025",
-          detail: "학점: 8.2",
-        },
+        { degree: "M.Tech 소프트웨어 공학", period: "2025 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
+        { degree: "B.Tech 컴퓨터 공학 (AI & ML)", period: "2021 – 2025", detail: "Christ University, Bangalore · 학점: 8.2" },
+        { degree: "대학 입시 (PCMCs)", period: "2018 – 2020", detail: "Jyoti Nivas College Autonomous, Bangalore" },
+        { degree: "중·고등학교", period: "", detail: "Good Samaritan English School, Bangalore" },
       ],
     },
     publications: {
@@ -1534,84 +1346,41 @@ export const translations = {
       eyebrow: "经历",
       title: "我的职业历程",
       items: [
-        {
-          role: "AI 核心 DevOps 工程师",
-          period: "至今",
-          points: [
-            "AI 驱动的企业应用",
-            "CI/CD 自动化",
-            "云原生开发",
-            "DevOps 工程",
-          ],
-        },
-        {
-          role: "软件开发工程师",
-          period: "此前",
-          points: ["企业应用开发"],
-        },
-        {
-          role: "计算机视觉实习生",
-          period: "实习",
-          points: ["海事 AI 解决方案", "最佳实习生奖"],
-        },
-        {
-          role: "软件开发实习生",
-          period: "实习",
-          points: ["航空航天软件开发"],
-        },
+        { role: "AI 核心 DevOps 工程师", period: "2026年6月 – 至今", points: ["AI 驱动的企业应用开发", "CI/CD 流水线自动化", "SAP BTP 云原生开发", "DevOps 工程"] },
+        { role: "软件工程师 — MD 办公室", period: "2025年8月 – 2026年6月", points: ["Learning Fest 2.0 AI 功能（RAG）", "SAP Joule AI 集成", "含 RBAC 的全栈统一预订应用", "SAP BTP 部署"] },
+        { role: "软件工程师实习生", period: "2024年6月 – 2025年6月", points: ["SERT Globe 企业软件开发"] },
+        { role: "SDE 实习生", period: "2024年5月", points: ["HAL 航空航天系统软件开发"] },
+        { role: "深度学习实习生", period: "2024年4月 – 2024年5月", points: ["Estah Society 深度学习研究"] },
+        { role: "计算机视觉实习生", period: "2023年8月 – 2023年9月", points: ["BEL 海事 AI 及军舰识别系统", "最佳实习生奖"] },
+        { role: "AI 项目实习生", period: "2023年5月 – 2023年6月", points: ["Bharat Electronics Limited AI & ML 项目开发"] },
+        { role: "Web 开发者", period: "2022年12月 – 2023年3月", points: ["Kohli Media LLP Web 开发"] },
       ],
     },
     projects: {
       eyebrow: "项目",
       title: "精选作品",
-      subtitle: "涵盖 AI、计算机视觉和全栈工程的精选项目。",
+      subtitle: "涵盖 AI、全栈工程和 DevOps 的精选项目。",
       code: "代码",
       liveDemo: "在线演示",
       comingSoon: "即将推出",
+      inProgress: "进行中",
       items: [
-        {
-          title: "多服务预订平台",
-          description:
-            "具备基于角色的访问控制和 40 多个 REST API 的全栈预订系统，使用 Docker 容器化。",
-          highlight: "40+ REST API",
-        },
-        {
-          title: "军舰识别系统",
-          description:
-            "使用 PyTorch 构建的用于识别海上军舰的深度学习计算机视觉模型。",
-          highlight: "准确率 93%",
-        },
-        {
-          title: "Learning Fest 2.0",
-          description: "即将推出 — 内部赋能与学习计划。",
-          highlight: "占位内容",
-        },
-        {
-          title: "Joule 集成",
-          description: "即将推出 — SAP Joule AI 助手集成项目。",
-          highlight: "占位内容",
-        },
-        {
-          title: "SAP BTP 云部署",
-          description: "即将推出 — 在 SAP BTP 上的云原生部署。",
-          highlight: "占位内容",
-        },
+        { title: "SkillSync – AI 招聘与协作平台", description: "基于 NLP 的 AI 职位匹配、WebSocket 实时聊天、容器化 CI/CD 流水线的全栈平台。", highlight: "进行中" },
+        { title: "多服务预订平台", description: "具备 40+ REST API、认证、RBAC 和 Docker 部署的全栈预订系统。", highlight: "40+ REST API" },
+        { title: "军舰识别系统（印度海军 – BEL）", description: "使用 PyTorch 构建的准确率 93% 的计算机视觉模型，适用于安全离线海事环境。", highlight: "准确率 93%" },
+        { title: "手语翻译器（英语 → ISL）", description: "基于 NLP 的系统，将英语转换为印度手语并生成交互式视觉输出，提升无障碍访问。", highlight: "无障碍" },
+        { title: "Jenkins CI/CD 流水线", description: "集成 GitHub 的 Freestyle 和 Pipeline 作业，支持 Jenkinsfile 及自动 SCM 轮询触发。", highlight: "DevOps" },
+        { title: "Git 版本控制与工作流自动化", description: "完整 Git 生命周期管理：功能分支、合并冲突解决、变基及 GitHub 集成。", highlight: "DevOps" },
       ],
     },
     education: {
       eyebrow: "教育",
       title: "教育背景",
       items: [
-        {
-          degree: "软件工程硕士 (M.Tech)",
-          period: "2025 – 至今",
-          detail: "",
-        },
-        {
-          degree: "计算机科学工程学士 (B.Tech，AI 与 ML)",
-          period: "2021 – 2025",
-          detail: "GPA：8.2",
-        },
+        { degree: "软件工程硕士 (M.Tech)", period: "2025 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
+        { degree: "计算机科学工程学士 (B.Tech，AI 与 ML)", period: "2021 – 2025", detail: "Christ University, Bangalore · GPA：8.2" },
+        { degree: "大学预科 (PCMCs)", period: "2018 – 2020", detail: "Jyoti Nivas College Autonomous, Bangalore" },
+        { degree: "中学", period: "", detail: "Good Samaritan English School, Bangalore" },
       ],
     },
     publications: {
