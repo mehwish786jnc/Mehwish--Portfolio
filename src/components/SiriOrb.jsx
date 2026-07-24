@@ -16,16 +16,18 @@ const SAMPLES = 54;
 const BASE = { p0: [50, 44], c1: [76, 35], c2: [86, 62], p3: [60, 80] };
 const WIDTH = 15;
 
-const GRADIENT_PAIRS = [
-  ["--brand-blue",   "--brand-purple"],
-  ["--brand-blue",   "--brand-teal"],
-  ["--brand-purple", "--brand-teal"],
-];
+// Mirrors the CSS custom properties in index.css — keyed by html lang value.
+const LANG_COLORS = {
+  en: { blue: "59 130 246",  purple: "139 92 246",  teal: "20 184 166"  },
+  de: { blue: "220 38 38",   purple: "180 83 9",     teal: "217 119 6"   },
+  fr: { blue: "29 78 216",   purple: "67 56 202",    teal: "220 38 38"   },
+  es: { blue: "185 28 28",   purple: "217 119 6",    teal: "234 88 12"   },
+  ja: { blue: "220 38 38",   purple: "236 72 153",   teal: "67 56 202"   },
+  ko: { blue: "29 78 216",   purple: "220 38 38",    teal: "124 58 237"  },
+  zh: { blue: "220 38 38",   purple: "202 138 4",    teal: "180 83 9"    },
+};
 
-function cssRgb(varName) {
-  const raw = getComputedStyle(document.documentElement).getPropertyValue(varName).trim();
-  return `rgb(${raw})`;
-}
+function toRgb(channels) { return `rgb(${channels})`; }
 
 function rot([x, y], deg) {
   const a = (deg * Math.PI) / 180;
@@ -107,14 +109,18 @@ export default function SiriOrb({ size = 64, state = "idle", className = "" }) {
   const uid = useId().replace(/:/g, "");
   const { lang } = useLang();
 
-  const gradients = useMemo(
-    () => GRADIENT_PAIRS.map(([a, b]) => ({ from: cssRgb(a), to: cssRgb(b) })),
-    [lang]
-  );
+  const { blue, purple, teal } = LANG_COLORS[lang] ?? LANG_COLORS.en;
+
+  const gradients = [
+    { from: toRgb(blue),   to: toRgb(purple) },
+    { from: toRgb(blue),   to: toRgb(teal)   },
+    { from: toRgb(purple), to: toRgb(teal)   },
+  ];
 
   const ribbons = useMemo(
     () => RIBBONS.map((r, i) => ({ ...r, ...buildRibbon(r), ...gradients[i] })),
-    [gradients]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [lang]
   );
 
   const spin = state === "thinking" ? 14 : state === "speaking" ? 20 : 42;
@@ -149,9 +155,9 @@ export default function SiriOrb({ size = 64, state = "idle", className = "" }) {
           ))}
 
           <radialGradient id={`${uid}-core`} cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor={gradients[2].from} stopOpacity="0.9" />
-            <stop offset="45%" stopColor={gradients[0].from} stopOpacity="0.4" />
-            <stop offset="100%" stopColor={gradients[1].to} stopOpacity="0" />
+            <stop offset="0%" stopColor={toRgb(purple)} stopOpacity="0.9" />
+            <stop offset="45%" stopColor={toRgb(blue)} stopOpacity="0.4" />
+            <stop offset="100%" stopColor={toRgb(teal)} stopOpacity="0" />
           </radialGradient>
 
           <filter id={`${uid}-soft`} x="-60%" y="-60%" width="220%" height="220%">
