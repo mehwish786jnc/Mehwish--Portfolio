@@ -120,21 +120,21 @@ export default function Hero() {
         {/* Right: profile */}
         <motion.div
           variants={fadeUp}
-          className="relative mx-auto flex items-center justify-center"
+          className="relative mx-auto flex w-full max-w-[280px] items-center justify-center sm:max-w-xs md:max-w-sm"
         >
-          <div className="absolute h-52 w-52 animate-blob rounded-full bg-gradient-to-tr from-brand-blue via-brand-purple to-brand-teal opacity-40 blur-2xl sm:h-72 sm:w-72 md:h-80 md:w-80" />
+          {/* Animated glow blobs — sized relative to container */}
+          <div className="absolute inset-[-20%] animate-blob rounded-full bg-brand-purple opacity-30 blur-3xl" />
+          <div className="absolute inset-[-15%] animate-blob rounded-full bg-brand-blue opacity-20 blur-3xl [animation-delay:2s]" />
+          <div className="absolute inset-[-10%] animate-blob rounded-full bg-brand-teal opacity-20 blur-3xl [animation-delay:4s]" />
 
-          <div className="animate-float relative">
-            <div className="grid h-44 w-44 place-items-center rounded-full bg-gradient-to-tr from-brand-blue via-brand-purple to-brand-teal p-1.5 shadow-2xl shadow-brand-purple/40 sm:h-56 sm:w-56 md:h-72 md:w-72">
-              <div className="grid h-full w-full place-items-center overflow-hidden rounded-full bg-slate-100 dark:bg-[#111121]">
-                <img
-                  src="/profile.jpg"
-                  alt={personal.name}
-                  loading="eager"
-                  className="h-full w-full rounded-full object-cover"
-                />
-              </div>
-            </div>
+          {/* Profile photo */}
+          <div className="animate-float relative z-10 w-full">
+            <img
+              src="/profile.jpg"
+              alt={personal.name}
+              loading="eager"
+              className="aspect-square w-full rounded-full object-cover shadow-2xl shadow-brand-purple/40"
+            />
           </div>
         </motion.div>
       </motion.div>
