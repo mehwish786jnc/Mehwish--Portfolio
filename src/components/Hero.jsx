@@ -135,8 +135,8 @@ export default function Hero() {
           <div className="animate-spin-slow absolute h-[14rem] w-[14rem] rounded-full opacity-70 blur-[2px] sm:h-[19rem] sm:w-[19rem] md:h-[23rem] md:w-[23rem]" style={{background:"conic-gradient(from 0deg,transparent 0deg,rgb(var(--brand-blue)) 90deg,rgb(var(--brand-purple)) 180deg,rgb(var(--brand-teal)) 270deg,transparent 360deg)"}} />
           <div className="absolute h-[12.5rem] w-[12.5rem] rounded-full bg-slate-50 dark:bg-[#0a0a12] sm:h-[17.5rem] sm:w-[17.5rem] md:h-[21.5rem] md:w-[21.5rem]" />
 
-          {/* Orbiting tech badges */}
-          <div className="animate-spin-slow absolute h-[14rem] w-[14rem] sm:h-[19rem] sm:w-[19rem] md:h-[23rem] md:w-[23rem]">
+          {/* Orbiting tech badges — hidden on mobile to prevent overflow */}
+          <div className="animate-spin-slow absolute hidden h-[19rem] w-[19rem] sm:block sm:h-[19rem] sm:w-[19rem] md:h-[23rem] md:w-[23rem]">
             {orbitBadges.map((b) => (
               <span
                 key={b.label}
