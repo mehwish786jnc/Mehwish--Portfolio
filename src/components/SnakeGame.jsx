@@ -245,10 +245,10 @@ export default function SnakeGame() {
     draw();
   }, [draw, endGame, placeFood]);
 
-  // Game loop — interval speeds up slightly with score.
+  // Game loop — starts slow, speeds up gradually with score.
   useEffect(() => {
     if (status !== "running") return;
-    const speed = Math.max(75, 145 - score * 4);
+    const speed = Math.max(70, 220 - score * 12);
     const id = setInterval(tick, speed);
     return () => clearInterval(id);
   }, [status, score, tick]);
