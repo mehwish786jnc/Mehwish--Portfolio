@@ -133,7 +133,7 @@ export default function Hero() {
               src="/profile.jpg"
               alt={personal.name}
               loading="eager"
-              className="aspect-square w-full rounded-full object-cover shadow-2xl shadow-brand-purple/40"
+              className="aspect-square w-full rounded-full object-cover object-center shadow-2xl shadow-brand-purple/40"
             />
           </div>
         </motion.div>
