@@ -12,13 +12,6 @@ const socials = [
   { icon: Mail, href: `mailto:${personal.email}`, label: "Email" },
 ];
 
-const orbitBadges = [
-  { label: "React",   pos: "left-1/2 top-0 -translate-x-1/2 -translate-y-1/2" },
-  { label: "Docker",  pos: "right-0 top-1/2 translate-x-1/2 -translate-y-1/2" },
-  { label: "K8s",     pos: "left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2" },
-  { label: "PyTorch", pos: "left-0 top-1/2 -translate-x-1/2 -translate-y-1/2" },
-];
-
 export default function Hero() {
   const { t } = useLang();
   const roles = t.hero.roles;
@@ -130,22 +123,6 @@ export default function Hero() {
           className="relative mx-auto flex items-center justify-center"
         >
           <div className="absolute h-52 w-52 animate-blob rounded-full bg-gradient-to-tr from-brand-blue via-brand-purple to-brand-teal opacity-40 blur-2xl sm:h-72 sm:w-72 md:h-80 md:w-80" />
-
-          {/* Spinning conic glow ring */}
-          <div className="animate-spin-slow absolute h-[14rem] w-[14rem] rounded-full opacity-70 blur-[2px] sm:h-[19rem] sm:w-[19rem] md:h-[23rem] md:w-[23rem]" style={{background:"conic-gradient(from 0deg,transparent 0deg,rgb(var(--brand-blue)) 90deg,rgb(var(--brand-purple)) 180deg,rgb(var(--brand-teal)) 270deg,transparent 360deg)"}} />
-          <div className="absolute h-[12.5rem] w-[12.5rem] rounded-full bg-slate-50 dark:bg-[#0a0a12] sm:h-[17.5rem] sm:w-[17.5rem] md:h-[21.5rem] md:w-[21.5rem]" />
-
-          {/* Orbiting tech badges — hidden on mobile, visible on tablet+ */}
-          <div className="animate-spin-slow absolute hidden md:block md:h-[23rem] md:w-[23rem]">
-            {orbitBadges.map((b) => (
-              <span
-                key={b.label}
-                className={`animate-spin-slow-reverse absolute ${b.pos} rounded-full glass-strong px-3 py-1 text-xs font-semibold text-slate-700 dark:text-slate-200`}
-              >
-                {b.label}
-              </span>
-            ))}
-          </div>
 
           <div className="animate-float relative">
             <div className="grid h-44 w-44 place-items-center rounded-full bg-gradient-to-tr from-brand-blue via-brand-purple to-brand-teal p-1.5 shadow-2xl shadow-brand-purple/40 sm:h-56 sm:w-56 md:h-72 md:w-72">
