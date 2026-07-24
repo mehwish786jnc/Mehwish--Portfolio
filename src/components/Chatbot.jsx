@@ -194,8 +194,7 @@ export default function Chatbot() {
               <SiriOrb size={40} state={thinking ? "thinking" : "speaking"} />
               <div className="flex-1">
                 <p className="text-sm font-bold text-slate-900 dark:text-white">
-                  {firstName}
-                  {c.assistant}
+                  Cupcake 🧁
                 </p>
                 <p className="flex items-center gap-1 text-xs text-brand-teal">
                   <span className="h-1.5 w-1.5 rounded-full bg-brand-teal" />

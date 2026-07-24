@@ -259,11 +259,11 @@ export const translations = {
       thinking: "thinking…",
       askMeAnything: "Ask me anything",
       placeholder: "Ask me anything…",
-      welcome: "Hi! 👋 I'm {name}'s AI assistant. What would you like to know?",
+      welcome: "Hi! 🧁 I'm Cupcake, {name}'s AI assistant. What would you like to know?",
       suggestions: ["Skills", "Experience", "Projects", "Contact"],
       responses: {
         greet:
-          "Hi there! 👋 I'm {name}'s AI assistant. She's a DevOps Engineer at SAP Labs India with full-stack skills. Ask me about her CI/CD work, tech stack, projects, or how to get in touch.",
+          "Hi there! 🧁 I'm Cupcake, {name}'s AI assistant. She's a DevOps Engineer at SAP Labs India with full-stack skills. Ask me about her CI/CD work, tech stack, projects, or how to get in touch.",
         skillsIntro: "Core languages: {langs}.",
         contact:
           "You can reach {name} at {email}.\nLinkedIn: {linkedin}\nGitHub: {github}\nOr use the contact form below the projects section.",

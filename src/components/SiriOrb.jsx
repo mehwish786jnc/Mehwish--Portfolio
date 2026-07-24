@@ -1,5 +1,6 @@
 import { useId, useMemo } from "react";
 import { motion } from "framer-motion";
+import { useLang } from "../i18n/LanguageContext";
 
 /*
  * Flagship abstract ribbon mark.
@@ -15,11 +16,16 @@ const SAMPLES = 54;
 const BASE = { p0: [50, 44], c1: [76, 35], c2: [86, 62], p3: [60, 80] };
 const WIDTH = 15;
 
-const GRADIENTS = [
-  { from: "#6366f1", to: "#7c3aed" }, // indigo -> deep violet
-  { from: "#0ea5e9", to: "#a855f7" }, // sky blue -> purple
-  { from: "#8b5cf6", to: "#06b6d4" }, // violet -> cyan
+const GRADIENT_PAIRS = [
+  ["--brand-blue",   "--brand-purple"],
+  ["--brand-blue",   "--brand-teal"],
+  ["--brand-purple", "--brand-teal"],
 ];
+
+function cssRgb(varName) {
+  const raw = getComputedStyle(document.documentElement).getPropertyValue(varName).trim();
+  return `rgb(${raw})`;
+}
 
 function rot([x, y], deg) {
   const a = (deg * Math.PI) / 180;
@@ -31,13 +37,12 @@ function rot([x, y], deg) {
   ];
 }
 
-const RIBBONS = [0, 120, 240].map((deg, i) => ({
+const RIBBONS = [0, 120, 240].map((deg) => ({
   p0: rot(BASE.p0, deg),
   c1: rot(BASE.c1, deg),
   c2: rot(BASE.c2, deg),
   p3: rot(BASE.p3, deg),
   w: WIDTH,
-  ...GRADIENTS[i],
 }));
 
 function cubic(p0, c1, c2, p3, t) {
@@ -100,9 +105,16 @@ function buildRibbon(r) {
 
 export default function SiriOrb({ size = 64, state = "idle", className = "" }) {
   const uid = useId().replace(/:/g, "");
+  const { lang } = useLang();
+
+  const gradients = useMemo(
+    () => GRADIENT_PAIRS.map(([a, b]) => ({ from: cssRgb(a), to: cssRgb(b) })),
+    [lang]
+  );
+
   const ribbons = useMemo(
-    () => RIBBONS.map((r) => ({ ...r, ...buildRibbon(r) })),
-    []
+    () => RIBBONS.map((r, i) => ({ ...r, ...buildRibbon(r), ...gradients[i] })),
+    [gradients]
   );
 
   const spin = state === "thinking" ? 14 : state === "speaking" ? 20 : 42;
@@ -137,9 +149,9 @@ export default function SiriOrb({ size = 64, state = "idle", className = "" }) {
           ))}
 
           <radialGradient id={`${uid}-core`} cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="#a78bfa" stopOpacity="0.9" />
-            <stop offset="45%" stopColor="#6366f1" stopOpacity="0.4" />
-            <stop offset="100%" stopColor="#4f46e5" stopOpacity="0" />
+            <stop offset="0%" stopColor={gradients[2].from} stopOpacity="0.9" />
+            <stop offset="45%" stopColor={gradients[0].from} stopOpacity="0.4" />
+            <stop offset="100%" stopColor={gradients[1].to} stopOpacity="0" />
           </radialGradient>
 
           <filter id={`${uid}-soft`} x="-60%" y="-60%" width="220%" height="220%">
