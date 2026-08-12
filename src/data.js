@@ -45,12 +45,12 @@ export const skillCategories = [
   {
     title: "DevOps & Cloud",
     icon: "Cloud",
-    skills: ["Docker", "Kubernetes", "Jenkins", "Git", "CI/CD", "SAP BTP"],
+    skills: ["Docker", "Kubernetes", "Helm", "Git", "GitHub Actions", "CI/CD", "SAP BTP", "Vault"],
   },
   {
     title: "AI & Machine Learning",
     icon: "Brain",
-    skills: ["PyTorch", "NLP", "Computer Vision", "AI Automation"],
+    skills: ["PyTorch", "NLP", "Computer Vision", "RAG", "LLM Orchestration", "Multi-Agent Systems", "MCP", "FAISS", "AI Automation"],
   },
 ];
 
