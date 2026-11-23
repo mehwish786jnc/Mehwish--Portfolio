@@ -172,8 +172,8 @@ export const certificates = [
 ];
 
 export const publications = [
-  { venue: "Biomedical Article" },
-  { venue: "Biomedical Article" },
-  { venue: "IEEE International Research Conference" },
-  { venue: "IEEE International Research Conference" },
+  { venue: "Biomedical Article", url: "https://www.biospectrumindia.com/views/17/19723/growing-traction-of-biomaterials-in-spinal-surgery.html" },
+  { venue: "Biomedical Article", url: "https://www.biospectrumindia.com/views/17/22291/ai-crucial-enabler-to-simplify-healthcare-delivery-.html" },
+  { venue: "IEEE International Research Conference", url: "https://ieeexplore.ieee.org/document/10212324" },
+  { venue: "IEEE International Research Conference", url: "https://ieeexplore.ieee.org/document/10493342" },
 ];

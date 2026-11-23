@@ -37,9 +37,16 @@ export default function Publications() {
             <h3 className="text-lg font-bold leading-snug text-slate-900 dark:text-white">
               {tr.title}
             </h3>
-            <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-purple opacity-0 transition-opacity group-hover:opacity-100">
-              {t.publications.readPaper} <ExternalLink className="h-4 w-4" />
-            </span>
+            {pub.url && (
+              <a
+                href={pub.url}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-purple transition-opacity hover:underline md:opacity-0 md:group-hover:opacity-100"
+              >
+                {t.publications.readPaper} <ExternalLink className="h-4 w-4" />
+              </a>
+            )}
           </motion.article>
           );
         })}
