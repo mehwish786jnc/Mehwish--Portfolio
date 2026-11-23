@@ -79,7 +79,7 @@ export const translations = {
           ],
         },
         {
-          role: "Software Engineer — MD's Office",
+          role: "Software Development Engineer — MD's Office",
           period: "Aug 2025 – Jun 2026",
           points: [
             "Built AI features for Learning Fest 2.0 with RAG integration",
@@ -144,40 +144,34 @@ export const translations = {
       inProgress: "In Progress",
       items: [
         {
-          title: "SkillSync – AI-Powered Collaboration & Hiring Platform",
+          title: "TruthKeeper – AI Knowledge Auditor",
           description:
-            "Full-stack platform with AI-based job-candidate matching using NLP, real-time chat via WebSockets, and containerised CI/CD pipeline.",
-          highlight: "In Progress",
+            "AI knowledge auditor (FastAPI, Vertex AI Gemini, Firestore, Cloud Run) that detects contradictions, stale content, and deprecated references across a document corpus, producing ranked, trust-scored \"rot reports\" with AI-drafted, human-approved fixes and a cache-first design for near-zero inference cost.",
+          highlight: "AI Auditor",
         },
         {
-          title: "Multi-Service Booking Platform",
+          title: "OpsGuard – Kubernetes/Terraform PR Guard",
           description:
-            "Full-stack booking system with 40+ REST APIs, authentication, role-based access control, and scalable Docker deployment.",
+            "Open-source Python CLI and GitHub Action that blocks risky Kubernetes and Terraform pull requests using dependency-graph blast-radius analysis and 19 deterministic security rules.",
+          highlight: "Open Source",
+        },
+        {
+          title: "Oberon – AI SRE Assistant",
+          description:
+            "AI-powered SRE assistant that autonomously triages incidents from Slack, analyses logs and CI/CD failures, retrieves similar past solutions via vector search, and raises GitHub PRs with auto-generated fixes to cut mean time to resolution.",
+          highlight: "Autonomous SRE",
+        },
+        {
+          title: "Unified Booking Application (SAP Labs)",
+          description:
+            "Full-stack internal service-booking platform built from scratch with 40+ REST APIs, authentication, role-based access control, and Docker deployment.",
           highlight: "40+ REST APIs",
         },
         {
-          title: "Warship Recognition System (Indian Navy – BEL)",
+          title: "Hoopla – Collaborative Event Planner",
           description:
-            "93% accurate computer vision model built with PyTorch for secure offline maritime environments with improved object detection.",
-          highlight: "93% Accuracy",
-        },
-        {
-          title: "Sign Language Translator (English → ISL)",
-          description:
-            "NLP-based translation system converting English to Indian Sign Language with interactive visual outputs, improving accessibility for hearing-impaired users.",
-          highlight: "Accessibility",
-        },
-        {
-          title: "CI/CD Pipeline using Jenkins",
-          description:
-            "Built Freestyle and Pipeline jobs integrating GitHub repos, pipeline-as-code with Jenkinsfile (Build → Test → Deploy), and automated SCM polling triggers.",
-          highlight: "DevOps",
-        },
-        {
-          title: "Git Version Control & Workflow Automation",
-          description:
-            "Full Git lifecycle management: feature branching, merge conflict resolution, rebase workflows, and GitHub integration for clean version history.",
-          highlight: "DevOps",
+            "Full-stack collaborative event-planning web app (Node, SQLite, vanilla JS) with Google OAuth, role-based sharing, activity logs, and reminders.",
+          highlight: "Google OAuth",
         },
       ],
     },
@@ -187,13 +181,13 @@ export const translations = {
       items: [
         {
           degree: "M.Tech Software Engineering",
-          period: "2025 – 2027",
+          period: "2026 – 2027",
           detail: "Birla Institute of Technology and Science, Pilani",
         },
         {
           degree: "B.Tech Computer Science Engineering (AI & ML)",
           period: "2021 – 2025",
-          detail: "Christ University, Bangalore · CGPA: 8.2",
+          detail: "Christ University, Bangalore · CGPA: 8.67",
         },
         {
           degree: "Pre-University (PCMCs)",
@@ -214,8 +208,8 @@ export const translations = {
       items: [
         { title: "Growing traction of biomaterials in spinal surgery" },
         { title: "AI: Crucial enabler to simplify healthcare delivery" },
-        { title: "Security Enhancement Using ENIGMA" },
-        { title: "Sign Language Translator for Learning Enhancement" },
+        { title: "Artificial Intelligence and Machine Learning Combined Security Enhancement Using ENIGMA" },
+        { title: "Design and Development of Teaching and Learning Tool Using Sign Language Translator to Enhance the Learning Skills for Students With Hearing and Verbal Impairment" },
       ],
     },
     certificates: {
@@ -278,7 +272,7 @@ export const translations = {
         about: ["who", "about", "yourself", "bio", "introduce", "devops", "fullstack", "full-stack", "full stack", "engineer"],
         skills: ["skill", "tech", "stack", "language", "know", "tools", "docker", "kubernetes", "k8s", "ci/cd", "pipeline", "react", "node", "typescript"],
         experience: ["experience", "work", "job", "career", "role", "company", "sap", "hal", "bel"],
-        projects: ["project", "build", "built", "warship", "booking"],
+        projects: ["project", "build", "built", "truthkeeper", "opsguard", "oberon", "hoopla", "booking"],
         education: ["education", "study", "degree", "college", "university", "btech", "mtech", "bits", "cgpa"],
         publications: ["publication", "paper", "research", "ieee"],
         certificates: ["certificate", "cert", "certification", "licence", "license", "course", "pytorch", "keras", "tensorflow", "hackerrank"],
@@ -366,7 +360,7 @@ export const translations = {
           points: ["KI-gestützte Unternehmensanwendungen", "CI/CD-Automatisierung", "Cloud-native Entwicklung auf SAP BTP", "DevOps-Engineering"],
         },
         {
-          role: "Software Engineer — MD's Office",
+          role: "Software Development Engineer — MD's Office",
           period: "Aug 2025 – Jun 2026",
           points: ["KI-Features für Learning Fest 2.0 mit RAG", "SAP Joule KI-Integration", "Full-Stack Unified Booking App mit RBAC", "Deployment auf SAP BTP"],
         },
@@ -411,20 +405,19 @@ export const translations = {
       comingSoon: "Demnächst",
       inProgress: "In Bearbeitung",
       items: [
-        { title: "SkillSync – KI-Plattform für Zusammenarbeit & Recruiting", description: "Full-Stack-Plattform mit KI-basiertem Job-Matching via NLP, Echtzeit-Chat und containerisierter CI/CD-Pipeline.", highlight: "In Bearbeitung" },
-        { title: "Multi-Service-Buchungsplattform", description: "Full-Stack-Buchungssystem mit 40+ REST-APIs, Authentifizierung, RBAC und Docker-Deployment.", highlight: "40+ REST-APIs" },
-        { title: "Kriegsschiff-Erkennungssystem (Indische Marine – BEL)", description: "93 % genaues Computer-Vision-Modell mit PyTorch für sichere maritime Umgebungen.", highlight: "93 % Genauigkeit" },
-        { title: "Gebärdensprach-Übersetzer (Englisch → ISL)", description: "NLP-basiertes System zur Übersetzung von Englisch in Indische Gebärdensprache mit visuellen Ausgaben.", highlight: "Barrierefreiheit" },
-        { title: "CI/CD-Pipeline mit Jenkins", description: "Freestyle- und Pipeline-Jobs mit GitHub-Integration, Jenkinsfile und automatisierten SCM-Polling-Triggern.", highlight: "DevOps" },
-        { title: "Git-Versionskontrolle & Workflow-Automatisierung", description: "Vollständiges Git-Lifecycle-Management: Feature-Branching, Merge-Konfliktlösung, Rebase und GitHub-Integration.", highlight: "DevOps" },
+        { title: "TruthKeeper – KI-Wissensauditor", description: "KI-Wissensauditor (FastAPI, Vertex AI Gemini, Firestore, Cloud Run), der Widersprüche, veraltete Inhalte und überholte Verweise in einem Dokumentenkorpus erkennt und bewertete \"Rot-Reports\" mit KI-entworfenen, menschlich geprüften Korrekturen erstellt – cache-first für nahezu kostenlose Inferenz.", highlight: "KI-Auditor" },
+        { title: "OpsGuard – K8s/Terraform PR-Guard", description: "Open-Source Python-CLI und GitHub Action, die riskante Kubernetes- und Terraform-Pull-Requests mittels Abhängigkeitsgraph-Blast-Radius-Analyse und 19 deterministischen Sicherheitsregeln blockiert.", highlight: "Open Source" },
+        { title: "Oberon – KI-SRE-Assistent", description: "KI-gestützter SRE-Assistent, der Vorfälle aus Slack autonom triagiert, Logs und CI/CD-Fehler analysiert, ähnliche frühere Lösungen per Vektorsuche findet und GitHub-PRs mit automatisch generierten Korrekturen erstellt.", highlight: "Autonomes SRE" },
+        { title: "Unified Booking Application (SAP Labs)", description: "Full-Stack-Plattform für interne Service-Buchungen – von Grund auf gebaut mit 40+ REST-APIs, Authentifizierung, RBAC und Docker-Deployment.", highlight: "40+ REST-APIs" },
+        { title: "Hoopla – Kollaborativer Event-Planer", description: "Full-Stack-Web-App zur kollaborativen Eventplanung (Node, SQLite, Vanilla JS) mit Google OAuth, rollenbasiertem Teilen, Aktivitätsprotokollen und Erinnerungen.", highlight: "Google OAuth" },
       ],
     },
     education: {
       eyebrow: "Ausbildung",
       title: "Akademischer Hintergrund",
       items: [
-        { degree: "M.Tech Software Engineering", period: "2025 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
-        { degree: "B.Tech Informatik (KI & ML)", period: "2021 – 2025", detail: "Christ University, Bangalore · Notendurchschnitt: 8,2" },
+        { degree: "M.Tech Software Engineering", period: "2026 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
+        { degree: "B.Tech Informatik (KI & ML)", period: "2021 – 2025", detail: "Christ University, Bangalore · Notendurchschnitt: 8,67" },
         { degree: "Voruni (PCMCs)", period: "2018 – 2020", detail: "Jyoti Nivas College Autonomous, Bangalore" },
         { degree: "Schule", period: "", detail: "Good Samaritan English School, Bangalore" },
       ],
@@ -436,8 +429,8 @@ export const translations = {
       items: [
         { title: "Wachstum von Biomaterialien in der Wirbelsäulenchirurgie" },
         { title: "KI: Wichtiger Enabler zur Vereinfachung der Gesundheitsversorgung" },
-        { title: "Sicherheitsverbesserung mit ENIGMA" },
-        { title: "Gebärdensprach-Übersetzer zur Lernförderung" },
+        { title: "Kombinierte Sicherheitsverbesserung mit KI und maschinellem Lernen unter Verwendung von ENIGMA" },
+        { title: "Entwicklung eines Lehr- und Lernwerkzeugs mit Gebärdensprach-Übersetzer zur Förderung der Lernfähigkeiten von Schülern mit Hör- und Sprachbehinderung" },
       ],
     },
     certificates: {
@@ -502,7 +495,7 @@ export const translations = {
         about: ["wer", "über", "vorstellen", "bio"],
         skills: ["fähigkeit", "fahigkeit", "skill", "technologie", "sprache", "tools", "stack"],
         experience: ["erfahrung", "arbeit", "job", "beruf", "karriere", "unternehmen"],
-        projects: ["projekt", "gebaut", "kriegsschiff", "buchung"],
+        projects: ["projekt", "gebaut", "truthkeeper", "opsguard", "oberon", "hoopla", "buchung"],
         education: ["ausbildung", "studium", "abschluss", "universität", "hochschule"],
         publications: ["publikation", "paper", "forschung", "ieee"],
         certificates: ["zertifikat", "zertifizierung", "zertifikat", "kurs", "certificate", "pytorch", "keras", "tensorflow"],
@@ -585,7 +578,7 @@ export const translations = {
       title: "Mon parcours professionnel",
       items: [
         { role: "Ingénieure AI Core DevOps", period: "Jun 2026 – présent", points: ["Applications d'entreprise pilotées par l'IA", "Automatisation CI/CD", "Développement cloud-native sur SAP BTP", "Ingénierie DevOps"] },
-        { role: "Ingénieure Logiciel — Bureau du DG", period: "Août 2025 – Jun 2026", points: ["Fonctionnalités IA pour Learning Fest 2.0 avec RAG", "Intégration SAP Joule", "Application de réservation full-stack avec RBAC", "Déploiement sur SAP BTP"] },
+        { role: "Ingénieure Développement Logiciel — Bureau du DG", period: "Août 2025 – Jun 2026", points: ["Fonctionnalités IA pour Learning Fest 2.0 avec RAG", "Intégration SAP Joule", "Application de réservation full-stack avec RBAC", "Déploiement sur SAP BTP"] },
         { role: "Stagiaire Ingénieure Logiciel", period: "Jun 2024 – Jun 2025", points: ["Développement logiciel d'entreprise chez SERT Globe"] },
         { role: "Stagiaire SDE", period: "Mai 2024", points: ["Développement logiciel pour systèmes aérospatiaux chez HAL"] },
         { role: "Stagiaire Deep Learning", period: "Avr 2024 – Mai 2024", points: ["Recherche en deep learning chez Estah Society"] },
@@ -603,20 +596,19 @@ export const translations = {
       comingSoon: "Bientôt disponible",
       inProgress: "En cours",
       items: [
-        { title: "SkillSync – Plateforme IA de collaboration & recrutement", description: "Plateforme full-stack avec matching IA via NLP, chat en temps réel et pipeline CI/CD conteneurisé.", highlight: "En cours" },
-        { title: "Plateforme de réservation multi-services", description: "Système full-stack avec 40+ API REST, authentification, RBAC et déploiement Docker.", highlight: "40+ API REST" },
-        { title: "Système de reconnaissance de navires (Marine indienne – BEL)", description: "Modèle de vision par ordinateur à 93 % de précision avec PyTorch pour environnements maritimes sécurisés.", highlight: "93 % de précision" },
-        { title: "Traducteur en langue des signes (Anglais → ISL)", description: "Système NLP traduisant l'anglais en langue des signes indienne avec sorties visuelles interactives.", highlight: "Accessibilité" },
-        { title: "Pipeline CI/CD avec Jenkins", description: "Jobs Freestyle et Pipeline avec intégration GitHub, Jenkinsfile et déclencheurs SCM automatisés.", highlight: "DevOps" },
-        { title: "Contrôle de version Git & automatisation des workflows", description: "Gestion complète du cycle de vie Git : branching, résolution de conflits, rebase et intégration GitHub.", highlight: "DevOps" },
+        { title: "TruthKeeper – Auditeur de connaissances IA", description: "Auditeur de connaissances IA (FastAPI, Vertex AI Gemini, Firestore, Cloud Run) qui détecte contradictions, contenus obsolètes et références dépréciées dans un corpus documentaire, et produit des \"rapports de pourriture\" classés et scorés avec des correctifs rédigés par l'IA et validés par l'humain, selon une conception cache-first à coût d'inférence quasi nul.", highlight: "Auditeur IA" },
+        { title: "OpsGuard – Gardien de PR K8s/Terraform", description: "CLI Python open-source et GitHub Action qui bloque les pull requests Kubernetes et Terraform risquées grâce à une analyse du rayon d'impact par graphe de dépendances et 19 règles de sécurité déterministes.", highlight: "Open Source" },
+        { title: "Oberon – Assistant SRE IA", description: "Assistant SRE piloté par l'IA qui trie de façon autonome les incidents depuis Slack, analyse les logs et les échecs CI/CD, retrouve des solutions passées similaires par recherche vectorielle et ouvre des PR GitHub avec des correctifs auto-générés.", highlight: "SRE autonome" },
+        { title: "Unified Booking Application (SAP Labs)", description: "Plateforme full-stack de réservation de services interne, conçue de zéro avec 40+ API REST, authentification, RBAC et déploiement Docker.", highlight: "40+ API REST" },
+        { title: "Hoopla – Planificateur d'événements collaboratif", description: "Application web full-stack de planification d'événements collaborative (Node, SQLite, JS vanilla) avec Google OAuth, partage basé sur les rôles, journaux d'activité et rappels.", highlight: "Google OAuth" },
       ],
     },
     education: {
       eyebrow: "Formation",
       title: "Parcours académique",
       items: [
-        { degree: "M.Tech en Génie logiciel", period: "2025 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
-        { degree: "B.Tech en Génie informatique (IA et ML)", period: "2021 – 2025", detail: "Christ University, Bangalore · Moyenne : 8,2" },
+        { degree: "M.Tech en Génie logiciel", period: "2026 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
+        { degree: "B.Tech en Génie informatique (IA et ML)", period: "2021 – 2025", detail: "Christ University, Bangalore · Moyenne : 8,67" },
         { degree: "Préuniversitaire (PCMCs)", period: "2018 – 2020", detail: "Jyoti Nivas College Autonomous, Bangalore" },
         { degree: "Scolarité", period: "", detail: "Good Samaritan English School, Bangalore" },
       ],
@@ -628,8 +620,8 @@ export const translations = {
       items: [
         { title: "Adoption croissante des biomatériaux en chirurgie spinale" },
         { title: "L'IA : un facilitateur clé pour simplifier les soins de santé" },
-        { title: "Renforcement de la sécurité avec ENIGMA" },
-        { title: "Traducteur de langue des signes pour l'apprentissage" },
+        { title: "Renforcement combiné de la sécurité par l'intelligence artificielle et l'apprentissage automatique à l'aide d'ENIGMA" },
+        { title: "Conception et développement d'un outil d'enseignement et d'apprentissage par traducteur en langue des signes pour améliorer les compétences des élèves malentendants et muets" },
       ],
     },
     certificates: {
@@ -693,7 +685,7 @@ export const translations = {
         about: ["qui", "à propos", "a propos", "présente", "presente", "bio"],
         skills: ["compétence", "competence", "technologie", "langage", "outils", "stack"],
         experience: ["expérience", "experience", "travail", "emploi", "carrière", "carriere", "entreprise"],
-        projects: ["projet", "réalisé", "realise", "navire", "réservation", "reservation"],
+        projects: ["projet", "réalisé", "realise", "truthkeeper", "opsguard", "oberon", "hoopla", "réservation", "reservation"],
         education: ["formation", "études", "etudes", "diplôme", "diplome", "université", "universite"],
         publications: ["publication", "article", "recherche", "ieee"],
         certificates: ["certificat", "certification", "licence", "cours", "certificate", "pytorch", "keras", "tensorflow"],
@@ -776,7 +768,7 @@ export const translations = {
       title: "Mi trayectoria profesional",
       items: [
         { role: "Ingeniera AI Core DevOps", period: "Jun 2026 – presente", points: ["Aplicaciones empresariales con IA", "Automatización CI/CD", "Desarrollo cloud-native en SAP BTP", "Ingeniería DevOps"] },
-        { role: "Ingeniera de Software — Oficina del DG", period: "Ago 2025 – Jun 2026", points: ["Funciones IA para Learning Fest 2.0 con RAG", "Integración SAP Joule", "App de reservas full-stack con RBAC", "Despliegue en SAP BTP"] },
+        { role: "Ingeniera de Desarrollo de Software — Oficina del DG", period: "Ago 2025 – Jun 2026", points: ["Funciones IA para Learning Fest 2.0 con RAG", "Integración SAP Joule", "App de reservas full-stack con RBAC", "Despliegue en SAP BTP"] },
         { role: "Pasante Ingeniera de Software", period: "Jun 2024 – Jun 2025", points: ["Desarrollo de software empresarial en SERT Globe"] },
         { role: "Pasante SDE", period: "May 2024", points: ["Desarrollo de software para sistemas aeroespaciales en HAL"] },
         { role: "Pasante Deep Learning", period: "Abr 2024 – May 2024", points: ["Investigación en deep learning en Estah Society"] },
@@ -794,20 +786,19 @@ export const translations = {
       comingSoon: "Próximamente",
       inProgress: "En progreso",
       items: [
-        { title: "SkillSync – Plataforma IA de colaboración y contratación", description: "Plataforma full-stack con matching IA por NLP, chat en tiempo real y pipeline CI/CD contenarizado.", highlight: "En progreso" },
-        { title: "Plataforma de reservas multiservicio", description: "Sistema full-stack con 40+ API REST, autenticación, RBAC y despliegue con Docker.", highlight: "40+ API REST" },
-        { title: "Sistema de reconocimiento de buques (Marina india – BEL)", description: "Modelo de visión por computadora con 93 % de precisión con PyTorch para entornos marítimos seguros.", highlight: "93 % precisión" },
-        { title: "Traductor de lengua de señas (Inglés → ISL)", description: "Sistema NLP que traduce inglés a lengua de señas india con salidas visuales interactivas.", highlight: "Accesibilidad" },
-        { title: "Pipeline CI/CD con Jenkins", description: "Jobs Freestyle y Pipeline con integración GitHub, Jenkinsfile y disparadores SCM automáticos.", highlight: "DevOps" },
-        { title: "Control de versiones Git & automatización", description: "Gestión completa del ciclo de vida Git: branching, resolución de conflictos, rebase e integración GitHub.", highlight: "DevOps" },
+        { title: "TruthKeeper – Auditor de conocimiento IA", description: "Auditor de conocimiento con IA (FastAPI, Vertex AI Gemini, Firestore, Cloud Run) que detecta contradicciones, contenido obsoleto y referencias en desuso en un corpus documental, y genera \"informes de deterioro\" clasificados y puntuados con correcciones redactadas por IA y aprobadas por humanos, con un diseño cache-first de coste de inferencia casi nulo.", highlight: "Auditor IA" },
+        { title: "OpsGuard – Guardián de PR K8s/Terraform", description: "CLI de Python de código abierto y GitHub Action que bloquea pull requests de Kubernetes y Terraform riesgosas mediante análisis de radio de impacto por grafo de dependencias y 19 reglas de seguridad deterministas.", highlight: "Código abierto" },
+        { title: "Oberon – Asistente SRE con IA", description: "Asistente SRE impulsado por IA que clasifica incidentes de Slack de forma autónoma, analiza logs y fallos de CI/CD, recupera soluciones pasadas similares mediante búsqueda vectorial y abre PRs en GitHub con correcciones autogeneradas.", highlight: "SRE autónomo" },
+        { title: "Unified Booking Application (SAP Labs)", description: "Plataforma full-stack interna de reservas de servicios, construida desde cero con 40+ API REST, autenticación, RBAC y despliegue con Docker.", highlight: "40+ API REST" },
+        { title: "Hoopla – Planificador de eventos colaborativo", description: "App web full-stack de planificación de eventos colaborativa (Node, SQLite, JS vanilla) con Google OAuth, compartición por roles, registros de actividad y recordatorios.", highlight: "Google OAuth" },
       ],
     },
     education: {
       eyebrow: "Formación",
       title: "Trayectoria académica",
       items: [
-        { degree: "M.Tech en Ingeniería de Software", period: "2025 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
-        { degree: "B.Tech en Ingeniería Informática (IA y ML)", period: "2021 – 2025", detail: "Christ University, Bangalore · Promedio: 8,2" },
+        { degree: "M.Tech en Ingeniería de Software", period: "2026 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
+        { degree: "B.Tech en Ingeniería Informática (IA y ML)", period: "2021 – 2025", detail: "Christ University, Bangalore · Promedio: 8,67" },
         { degree: "Preuniversitario (PCMCs)", period: "2018 – 2020", detail: "Jyoti Nivas College Autonomous, Bangalore" },
         { degree: "Secundaria", period: "", detail: "Good Samaritan English School, Bangalore" },
       ],
@@ -819,8 +810,8 @@ export const translations = {
       items: [
         { title: "Creciente uso de biomateriales en cirugía espinal" },
         { title: "IA: facilitador clave para simplificar la atención médica" },
-        { title: "Mejora de la seguridad con ENIGMA" },
-        { title: "Traductor de lengua de señas para el aprendizaje" },
+        { title: "Mejora combinada de la seguridad mediante inteligencia artificial y aprendizaje automático con ENIGMA" },
+        { title: "Diseño y desarrollo de una herramienta de enseñanza y aprendizaje con traductor de lengua de señas para mejorar las habilidades de estudiantes con discapacidad auditiva y del habla" },
       ],
     },
     certificates: {
@@ -884,7 +875,7 @@ export const translations = {
         about: ["quién", "quien", "sobre", "preséntate", "presentate", "bio"],
         skills: ["habilidad", "tecnología", "tecnologia", "lenguaje", "herramientas", "stack"],
         experience: ["experiencia", "trabajo", "empleo", "carrera", "empresa"],
-        projects: ["proyecto", "construido", "buque", "reserva"],
+        projects: ["proyecto", "construido", "truthkeeper", "opsguard", "oberon", "hoopla", "reserva"],
         education: ["formación", "formacion", "estudio", "título", "titulo", "universidad"],
         publications: ["publicación", "publicacion", "artículo", "articulo", "investigación", "ieee"],
         certificates: ["certificado", "certificación", "certificacion", "curso", "certificate", "pytorch", "keras", "tensorflow"],
@@ -966,7 +957,7 @@ export const translations = {
       title: "私のキャリアの歩み",
       items: [
         { role: "AIコアDevOpsエンジニア", period: "2026年6月 – 現在", points: ["AI 活用エンタープライズアプリ開発", "CI/CD パイプライン自動化", "SAP BTP でのクラウドネイティブ開発", "DevOps エンジニアリング"] },
-        { role: "ソフトウェアエンジニア — MD 室", period: "2025年8月 – 2026年6月", points: ["Learning Fest 2.0 の AI 機能 (RAG)", "SAP Joule AI 統合", "RBAC 付き統合予約アプリ開発", "SAP BTP へのデプロイ"] },
+        { role: "ソフトウェア開発エンジニア — MD 室", period: "2025年8月 – 2026年6月", points: ["Learning Fest 2.0 の AI 機能 (RAG)", "SAP Joule AI 統合", "RBAC 付き統合予約アプリ開発", "SAP BTP へのデプロイ"] },
         { role: "ソフトウェアエンジニア インターン", period: "2024年6月 – 2025年6月", points: ["SERT Globe でのエンタープライズ ソフトウェア開発"] },
         { role: "SDE インターン", period: "2024年5月", points: ["HAL での航空宇宙システム向けソフトウェア開発"] },
         { role: "ディープラーニング インターン", period: "2024年4月 – 2024年5月", points: ["Estah Society でのディープラーニング研究"] },
@@ -984,20 +975,19 @@ export const translations = {
       comingSoon: "近日公開",
       inProgress: "進行中",
       items: [
-        { title: "SkillSync – AI 採用・コラボレーションプラットフォーム", description: "NLP による AI マッチング、WebSocket リアルタイムチャット、コンテナ化 CI/CD パイプラインを備えたフルスタックプラットフォーム。", highlight: "進行中" },
-        { title: "マルチサービス予約プラットフォーム", description: "40 以上の REST API、認証、RBAC、Docker デプロイを備えたフルスタック予約システム。", highlight: "40+ REST API" },
-        { title: "軍艦認識システム（インド海軍 – BEL）", description: "安全なオフライン海洋環境向けに PyTorch で構築した精度 93% のコンピュータビジョンモデル。", highlight: "精度 93%" },
-        { title: "手話翻訳（英語 → ISL）", description: "英語をインド手話に変換する NLP ベースの翻訳システム。視覚的な出力でアクセシビリティを向上。", highlight: "アクセシビリティ" },
-        { title: "Jenkins を使った CI/CD パイプライン", description: "GitHub 連携、Jenkinsfile によるパイプライン・アズ・コード、SCM 自動ポーリングを備えたジョブ構築。", highlight: "DevOps" },
-        { title: "Git バージョン管理 & ワークフロー自動化", description: "フィーチャーブランチ、マージコンフリクト解消、リベース、GitHub 連携を含む Git ライフサイクル管理。", highlight: "DevOps" },
+        { title: "TruthKeeper – AI ナレッジ監査", description: "ドキュメント群の矛盾・陳腐化した内容・非推奨の参照を検出する AI ナレッジ監査ツール（FastAPI、Vertex AI Gemini、Firestore、Cloud Run）。信頼スコア付きの「腐敗レポート」をランク付けして生成し、AI が下書きし人が承認する修正を提示。キャッシュファースト設計で推論コストをほぼゼロに。", highlight: "AI 監査" },
+        { title: "OpsGuard – K8s/Terraform PR ガード", description: "依存グラフによる影響範囲分析と 19 の決定論的セキュリティルールで、リスクの高い Kubernetes・Terraform のプルリクエストをブロックするオープンソースの Python CLI & GitHub Action。", highlight: "オープンソース" },
+        { title: "Oberon – AI SRE アシスタント", description: "Slack からインシデントを自律的にトリアージし、ログや CI/CD の失敗を分析、ベクトル検索で過去の類似解決策を取得し、自動生成した修正を含む GitHub PR を作成する AI 搭載 SRE アシスタント。", highlight: "自律 SRE" },
+        { title: "Unified Booking Application（SAP Labs）", description: "40 以上の REST API、認証、RBAC、Docker デプロイを備え、ゼロから構築した社内サービス予約フルスタックプラットフォーム。", highlight: "40+ REST API" },
+        { title: "Hoopla – 共同イベントプランナー", description: "Google OAuth、ロールベース共有、アクティビティログ、リマインダーを備えた共同イベント計画フルスタック Web アプリ（Node、SQLite、バニラ JS）。", highlight: "Google OAuth" },
       ],
     },
     education: {
       eyebrow: "学歴",
       title: "学歴",
       items: [
-        { degree: "M.Tech ソフトウェアエンジニアリング", period: "2025 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
-        { degree: "B.Tech コンピュータサイエンス工学（AI・ML）", period: "2021 – 2025", detail: "Christ University, Bangalore · GPA: 8.2" },
+        { degree: "M.Tech ソフトウェアエンジニアリング", period: "2026 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
+        { degree: "B.Tech コンピュータサイエンス工学（AI・ML）", period: "2021 – 2025", detail: "Christ University, Bangalore · GPA: 8.67" },
         { degree: "高校 (PCMCs)", period: "2018 – 2020", detail: "Jyoti Nivas College Autonomous, Bangalore" },
         { degree: "中学・小学校", period: "", detail: "Good Samaritan English School, Bangalore" },
       ],
@@ -1009,8 +999,8 @@ export const translations = {
       items: [
         { title: "脊椎手術におけるバイオマテリアルの普及" },
         { title: "AI：医療提供を簡素化する重要な推進力" },
-        { title: "ENIGMA を用いたセキュリティ強化" },
-        { title: "学習支援のための手話翻訳システム" },
+        { title: "ENIGMA を用いた人工知能と機械学習によるセキュリティ強化" },
+        { title: "聴覚・言語障害のある生徒の学習能力向上のための手話翻訳を用いた教育・学習ツールの設計と開発" },
       ],
     },
     certificates: {
@@ -1075,7 +1065,7 @@ export const translations = {
         about: ["誰", "について", "自己紹介", "プロフィール", "bio"],
         skills: ["スキル", "技術", "言語", "ツール", "得意"],
         experience: ["経歴", "経験", "仕事", "職歴", "キャリア", "会社"],
-        projects: ["プロジェクト", "作品", "軍艦", "予約"],
+        projects: ["プロジェクト", "作品", "truthkeeper", "opsguard", "oberon", "hoopla", "予約"],
         education: ["学歴", "学業", "学位", "大学", "教育"],
         publications: ["論文", "出版", "研究", "ieee"],
         certificates: ["資格", "認定", "証明", "修了", "certificate", "pytorch", "keras", "tensorflow"],
@@ -1157,7 +1147,7 @@ export const translations = {
       title: "나의 커리어 여정",
       items: [
         { role: "AI 코어 DevOps 엔지니어", period: "2026년 6월 – 현재", points: ["AI 기반 엔터프라이즈 앱 개발", "CI/CD 파이프라인 자동화", "SAP BTP 클라우드 네이티브 개발", "DevOps 엔지니어링"] },
-        { role: "소프트웨어 엔지니어 — MD 실", period: "2025년 8월 – 2026년 6월", points: ["Learning Fest 2.0 AI 기능 (RAG)", "SAP Joule AI 통합", "RBAC 통합 예약 앱 개발", "SAP BTP 배포"] },
+        { role: "소프트웨어 개발 엔지니어 — MD 실", period: "2025년 8월 – 2026년 6월", points: ["Learning Fest 2.0 AI 기능 (RAG)", "SAP Joule AI 통합", "RBAC 통합 예약 앱 개발", "SAP BTP 배포"] },
         { role: "소프트웨어 엔지니어 인턴", period: "2024년 6월 – 2025년 6월", points: ["SERT Globe 엔터프라이즈 소프트웨어 개발"] },
         { role: "SDE 인턴", period: "2024년 5월", points: ["HAL 항공우주 시스템 소프트웨어 개발"] },
         { role: "딥러닝 인턴", period: "2024년 4월 – 2024년 5월", points: ["Estah Society 딥러닝 연구"] },
@@ -1175,20 +1165,19 @@ export const translations = {
       comingSoon: "출시 예정",
       inProgress: "진행 중",
       items: [
-        { title: "SkillSync – AI 채용·협업 플랫폼", description: "NLP 기반 AI 매칭, WebSocket 실시간 채팅, 컨테이너화 CI/CD 파이프라인을 갖춘 풀스택 플랫폼.", highlight: "진행 중" },
-        { title: "멀티 서비스 예약 플랫폼", description: "40개 이상의 REST API, 인증, RBAC, Docker 배포를 갖춘 풀스택 예약 시스템.", highlight: "40+ REST API" },
-        { title: "군함 인식 시스템 (인도 해군 – BEL)", description: "보안 해양 환경을 위해 PyTorch로 구축한 정확도 93% 컴퓨터 비전 모델.", highlight: "정확도 93%" },
-        { title: "수어 번역기 (영어 → ISL)", description: "영어를 인도 수어로 변환하는 NLP 기반 시스템. 시각적 출력으로 접근성 향상.", highlight: "접근성" },
-        { title: "Jenkins CI/CD 파이프라인", description: "GitHub 연동, Jenkinsfile 파이프라인 코드, 자동 SCM 폴링 트리거를 갖춘 잡 구성.", highlight: "DevOps" },
-        { title: "Git 버전 관리 & 워크플로우 자동화", description: "피처 브랜칭, 충돌 해결, 리베이스, GitHub 연동을 포함한 전체 Git 라이프사이클 관리.", highlight: "DevOps" },
+        { title: "TruthKeeper – AI 지식 감사기", description: "문서 코퍼스 전반의 모순, 오래된 내용, 사용 중단된 참조를 감지하는 AI 지식 감사 도구(FastAPI, Vertex AI Gemini, Firestore, Cloud Run). 신뢰 점수 기반의 \"부패 리포트\"를 순위화해 생성하고 AI 초안·사람 승인 수정안을 제시하며, 캐시 우선 설계로 추론 비용을 거의 0에 가깝게 유지.", highlight: "AI 감사" },
+        { title: "OpsGuard – K8s/Terraform PR 가드", description: "의존성 그래프 영향 범위 분석과 19개의 결정론적 보안 규칙으로 위험한 Kubernetes 및 Terraform 풀 리퀘스트를 차단하는 오픈소스 Python CLI 및 GitHub Action.", highlight: "오픈소스" },
+        { title: "Oberon – AI SRE 어시스턴트", description: "Slack에서 인시던트를 자율적으로 분류하고 로그와 CI/CD 실패를 분석하며, 벡터 검색으로 유사한 과거 해결책을 찾아 자동 생성 수정안이 담긴 GitHub PR을 생성하는 AI 기반 SRE 어시스턴트.", highlight: "자율 SRE" },
+        { title: "Unified Booking Application (SAP Labs)", description: "40개 이상의 REST API, 인증, RBAC, Docker 배포를 갖춘, 처음부터 구축한 사내 서비스 예약 풀스택 플랫폼.", highlight: "40+ REST API" },
+        { title: "Hoopla – 협업 이벤트 플래너", description: "Google OAuth, 역할 기반 공유, 활동 로그, 리마인더를 갖춘 협업 이벤트 기획 풀스택 웹 앱(Node, SQLite, 바닐라 JS).", highlight: "Google OAuth" },
       ],
     },
     education: {
       eyebrow: "학력",
       title: "학력",
       items: [
-        { degree: "M.Tech 소프트웨어 공학", period: "2025 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
-        { degree: "B.Tech 컴퓨터 공학 (AI & ML)", period: "2021 – 2025", detail: "Christ University, Bangalore · 학점: 8.2" },
+        { degree: "M.Tech 소프트웨어 공학", period: "2026 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
+        { degree: "B.Tech 컴퓨터 공학 (AI & ML)", period: "2021 – 2025", detail: "Christ University, Bangalore · 학점: 8.67" },
         { degree: "대학 입시 (PCMCs)", period: "2018 – 2020", detail: "Jyoti Nivas College Autonomous, Bangalore" },
         { degree: "중·고등학교", period: "", detail: "Good Samaritan English School, Bangalore" },
       ],
@@ -1200,8 +1189,8 @@ export const translations = {
       items: [
         { title: "척추 수술에서 생체재료의 성장 동향" },
         { title: "AI: 의료 서비스 간소화를 위한 핵심 지원자" },
-        { title: "ENIGMA를 활용한 보안 강화" },
-        { title: "학습 향상을 위한 수어 번역기" },
+        { title: "ENIGMA를 활용한 인공지능 및 머신러닝 결합 보안 강화" },
+        { title: "청각 및 언어 장애 학생의 학습 능력 향상을 위한 수어 번역 교수·학습 도구의 설계 및 개발" },
       ],
     },
     certificates: {
@@ -1265,7 +1254,7 @@ export const translations = {
         about: ["누구", "소개", "자기소개", "프로필", "bio"],
         skills: ["기술", "스킬", "언어", "도구", "스택"],
         experience: ["경력", "경험", "일", "직장", "커리어", "회사"],
-        projects: ["프로젝트", "작업", "군함", "예약"],
+        projects: ["프로젝트", "작업", "truthkeeper", "opsguard", "oberon", "hoopla", "예약"],
         education: ["학력", "학업", "학위", "대학", "교육"],
         publications: ["논문", "출판", "연구", "ieee"],
         certificates: ["자격증", "인증", "수료", "과정", "certificate", "pytorch", "keras", "tensorflow"],
@@ -1347,7 +1336,7 @@ export const translations = {
       title: "我的职业历程",
       items: [
         { role: "AI 核心 DevOps 工程师", period: "2026年6月 – 至今", points: ["AI 驱动的企业应用开发", "CI/CD 流水线自动化", "SAP BTP 云原生开发", "DevOps 工程"] },
-        { role: "软件工程师 — MD 办公室", period: "2025年8月 – 2026年6月", points: ["Learning Fest 2.0 AI 功能（RAG）", "SAP Joule AI 集成", "含 RBAC 的全栈统一预订应用", "SAP BTP 部署"] },
+        { role: "软件开发工程师 — MD 办公室", period: "2025年8月 – 2026年6月", points: ["Learning Fest 2.0 AI 功能（RAG）", "SAP Joule AI 集成", "含 RBAC 的全栈统一预订应用", "SAP BTP 部署"] },
         { role: "软件工程师实习生", period: "2024年6月 – 2025年6月", points: ["SERT Globe 企业软件开发"] },
         { role: "SDE 实习生", period: "2024年5月", points: ["HAL 航空航天系统软件开发"] },
         { role: "深度学习实习生", period: "2024年4月 – 2024年5月", points: ["Estah Society 深度学习研究"] },
@@ -1365,20 +1354,19 @@ export const translations = {
       comingSoon: "即将推出",
       inProgress: "进行中",
       items: [
-        { title: "SkillSync – AI 招聘与协作平台", description: "基于 NLP 的 AI 职位匹配、WebSocket 实时聊天、容器化 CI/CD 流水线的全栈平台。", highlight: "进行中" },
-        { title: "多服务预订平台", description: "具备 40+ REST API、认证、RBAC 和 Docker 部署的全栈预订系统。", highlight: "40+ REST API" },
-        { title: "军舰识别系统（印度海军 – BEL）", description: "使用 PyTorch 构建的准确率 93% 的计算机视觉模型，适用于安全离线海事环境。", highlight: "准确率 93%" },
-        { title: "手语翻译器（英语 → ISL）", description: "基于 NLP 的系统，将英语转换为印度手语并生成交互式视觉输出，提升无障碍访问。", highlight: "无障碍" },
-        { title: "Jenkins CI/CD 流水线", description: "集成 GitHub 的 Freestyle 和 Pipeline 作业，支持 Jenkinsfile 及自动 SCM 轮询触发。", highlight: "DevOps" },
-        { title: "Git 版本控制与工作流自动化", description: "完整 Git 生命周期管理：功能分支、合并冲突解决、变基及 GitHub 集成。", highlight: "DevOps" },
+        { title: "TruthKeeper – AI 知识审计器", description: "基于 AI 的知识审计器（FastAPI、Vertex AI Gemini、Firestore、Cloud Run），可检测文档语料中的矛盾、过时内容和废弃引用，生成带信任评分的排序\"腐烂报告\"，并提供由 AI 起草、人工审核的修复方案；采用缓存优先设计，推理成本几乎为零。", highlight: "AI 审计" },
+        { title: "OpsGuard – K8s/Terraform PR 守卫", description: "开源 Python CLI 与 GitHub Action，通过依赖图影响范围分析和 19 条确定性安全规则，拦截有风险的 Kubernetes 和 Terraform 拉取请求。", highlight: "开源" },
+        { title: "Oberon – AI SRE 助手", description: "AI 驱动的 SRE 助手，自主从 Slack 分类事件、分析日志与 CI/CD 故障，通过向量搜索检索相似的历史解决方案，并创建带自动生成修复的 GitHub PR。", highlight: "自主 SRE" },
+        { title: "Unified Booking Application（SAP Labs）", description: "从零构建的内部服务预订全栈平台，具备 40+ REST API、认证、RBAC 和 Docker 部署。", highlight: "40+ REST API" },
+        { title: "Hoopla – 协作式活动策划器", description: "协作式活动策划全栈 Web 应用（Node、SQLite、原生 JS），支持 Google OAuth、基于角色的共享、活动日志和提醒。", highlight: "Google OAuth" },
       ],
     },
     education: {
       eyebrow: "教育",
       title: "教育背景",
       items: [
-        { degree: "软件工程硕士 (M.Tech)", period: "2025 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
-        { degree: "计算机科学工程学士 (B.Tech，AI 与 ML)", period: "2021 – 2025", detail: "Christ University, Bangalore · GPA：8.2" },
+        { degree: "软件工程硕士 (M.Tech)", period: "2026 – 2027", detail: "Birla Institute of Technology and Science, Pilani" },
+        { degree: "计算机科学工程学士 (B.Tech，AI 与 ML)", period: "2021 – 2025", detail: "Christ University, Bangalore · GPA：8.67" },
         { degree: "大学预科 (PCMCs)", period: "2018 – 2020", detail: "Jyoti Nivas College Autonomous, Bangalore" },
         { degree: "中学", period: "", detail: "Good Samaritan English School, Bangalore" },
       ],
@@ -1390,8 +1378,8 @@ export const translations = {
       items: [
         { title: "生物材料在脊柱外科中的应用趋势" },
         { title: "人工智能：简化医疗服务的关键推动者" },
-        { title: "使用 ENIGMA 增强安全性" },
-        { title: "用于提升学习的手语翻译器" },
+        { title: "使用 ENIGMA 的人工智能与机器学习联合安全增强" },
+        { title: "面向听障与语障学生的手语翻译教学工具的设计与开发以提升学习能力" },
       ],
     },
     certificates: {
@@ -1455,7 +1443,7 @@ export const translations = {
         about: ["谁", "关于", "介绍", "简介", "bio"],
         skills: ["技能", "技术", "语言", "工具", "栈"],
         experience: ["经历", "经验", "工作", "职业", "公司"],
-        projects: ["项目", "作品", "军舰", "预订"],
+        projects: ["项目", "作品", "truthkeeper", "opsguard", "oberon", "hoopla", "预订"],
         education: ["教育", "学习", "学位", "大学", "学历"],
         publications: ["论文", "出版", "研究", "ieee"],
         certificates: ["证书", "认证", "资格", "课程", "certificate", "pytorch", "keras", "tensorflow"],

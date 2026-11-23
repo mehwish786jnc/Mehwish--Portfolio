@@ -28,6 +28,7 @@ export const languageSkills = [
   { name: "Python", level: 72 },
   { name: "TypeScript", level: 65 },
   { name: "JavaScript", level: 70 },
+  { name: "SQL", level: 68 },
   { name: "Bash", level: 55 },
 ];
 
@@ -50,7 +51,7 @@ export const skillCategories = [
   {
     title: "AI & Machine Learning",
     icon: "Brain",
-    skills: ["PyTorch", "NLP", "Computer Vision", "RAG", "LLM Orchestration", "Multi-Agent Systems", "MCP", "FAISS", "AI Automation"],
+    skills: ["Generative AI", "LLMs", "PyTorch", "NLP", "Computer Vision", "RAG", "LLM Orchestration", "Multi-Agent Systems", "MCP", "FAISS", "AI Automation"],
   },
 ];
 
@@ -99,47 +100,39 @@ export const experiences = [
 
 export const projects = [
   {
-    tags: ["React", "Node.js", "PostgreSQL", "NLP", "WebSockets", "Docker", "CI/CD"],
-    github: "https://github.com/mehwish-sultana",
+    tags: ["FastAPI", "Vertex AI", "Gemini", "Firestore", "Cloud Run", "RAG"],
+    github: "https://github.com/mehwish786jnc",
     demo: "#",
     featured: true,
     accent: "from-brand-blue to-brand-purple",
-    status: "inProgress",
   },
   {
-    tags: ["React", "Node.js", "PostgreSQL", "RBAC", "Docker"],
-    github: "https://github.com/mehwish-sultana",
+    tags: ["Python", "Kubernetes", "Terraform", "GitHub Actions", "CLI", "Security"],
+    github: "https://github.com/mehwish786jnc",
     demo: "#",
     featured: true,
     accent: "from-brand-purple to-brand-teal",
   },
   {
-    tags: ["PyTorch", "Computer Vision", "Deep Learning", "Object Detection"],
-    github: "https://github.com/mehwish-sultana",
+    tags: ["AI", "SRE", "Slack", "Vector Search", "CI/CD", "GitHub", "RAG"],
+    github: "https://github.com/mehwish786jnc",
     demo: "#",
     featured: true,
     accent: "from-brand-teal to-brand-blue",
   },
   {
-    tags: ["NLP", "Python", "Accessibility", "React"],
-    github: "https://github.com/mehwish-sultana",
+    tags: ["React", "Node.js", "PostgreSQL", "RBAC", "Docker"],
+    github: "https://github.com/mehwish786jnc",
     demo: "#",
     featured: false,
     accent: "from-brand-blue to-brand-teal",
   },
   {
-    tags: ["Jenkins", "CI/CD", "GitHub", "DevOps"],
-    github: "https://github.com/mehwish-sultana",
+    tags: ["Node.js", "SQLite", "JavaScript", "Google OAuth"],
+    github: "https://github.com/mehwish786jnc",
     demo: "#",
     featured: false,
     accent: "from-brand-purple to-brand-blue",
-  },
-  {
-    tags: ["Git", "GitHub", "Version Control", "DevOps"],
-    github: "https://github.com/mehwish-sultana",
-    demo: "#",
-    featured: false,
-    accent: "from-brand-teal to-brand-purple",
   },
 ];
 
@@ -179,8 +172,8 @@ export const certificates = [
 ];
 
 export const publications = [
-  { venue: "Biomedical Journal" },
-  { venue: "Biomedical Journal" },
-  { venue: "International Conference" },
-  { venue: "International Conference" },
+  { venue: "Biomedical Article" },
+  { venue: "Biomedical Article" },
+  { venue: "IEEE International Research Conference" },
+  { venue: "IEEE International Research Conference" },
 ];
