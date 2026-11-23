@@ -8,7 +8,7 @@ export const personal = {
   email: "mehwishsultana2@gmail.com",
   linkedin: "https://www.linkedin.com/in/mehwish-sultana-a497041b3/",
   github: "https://github.com/mehwish786jnc",
-  resumeUrl: "https://drive.google.com/uc?export=download&id=1A5tLLOEQnYMUgpFpyIc5zNl0gy7sTGli",
+  resumeUrl: "https://drive.google.com/uc?export=download&id=1PYEKaSwXskWpo-8V6wPguQPNQZPeQMIh",
 };
 
 export const navLinks = [
